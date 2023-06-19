@@ -40,3 +40,7 @@
 .making{
     background-color: #b2b3b5 !important;
 }
+
+.making .content{
+    display: block;
+}
