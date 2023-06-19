@@ -1,0 +1,42 @@
+.collections {
+    background-image: url(/assets/img/collections-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collections .col-4{
+
+    padding-top: 200px;
+    text-align: end;
+    padding-right: 100px;
+    padding-bottom: 150px;
+}
+
+.collections .col-4 h1{
+    color: rgb(156, 148, 148);
+    font-size: 35px;
+    font-weight:700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.collections .col-4 p{
+    color: rgb(156, 148, 148);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+.collections .col-4 h2{
+    color: rgb(156, 148, 148);
+    font-size: 25px;
+    word-spacing: 15px;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+
+.making{
+    background-color: #b2b3b5 !important;
+}
