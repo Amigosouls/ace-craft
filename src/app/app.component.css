@@ -1,0 +1,54 @@
+
+/* ------ Navbar  ----------- */
+.navbar{
+    background-color: black;
+}
+
+.navbar h2{
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+/*------------- Main Body ---------- */
+
+.main-body{
+    background-image: url(../assets/img/body-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+.col-12{
+    position: relative;
+}
+.content{
+    
+    justify-content: center;
+    align-items: end;
+    display: grid;
+    border: 2px solid white;
+    margin-top: 320px;
+    margin-bottom: 80px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.content p{
+    color: grey;
+}
+
+.content p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    p
+}
+
+.content p{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

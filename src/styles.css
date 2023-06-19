@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+
+.p-tabmenu .p-tabmenu-nav{
+    background-color: black !important;
+    display:none !important;
+    margin-left: 15% !important;
+    justify-content: space-between;
+}
+a{
+    background-color: black !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+/* a> .p-menuitem-icon{
+    display: none;
+} */
+
+.p-menuitem-text{
+    color: grey !important;
+    font-weight:600 !important;
+}
+
+.p-menuitem-text:hover{
+    color: rgb(255, 255, 255) !important;
+}
+.p-menuitem-link:focus {
+    box-shadow: none !important;
+    border-bottom: 3px white solid !important;
+    font-weight: bolder !important;
+    color: #ffffff !important;
+}
+
+.p-menubar{
+    background: black !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    border: none !important;
+    margin-left: 200px !important;
+}
