@@ -39,3 +39,7 @@ a{
     border: none !important;
     margin-left: 200px !important;
 }
+
+.body{
+    overflow-x: hidden !important;
+}
