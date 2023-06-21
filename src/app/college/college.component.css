@@ -50,6 +50,29 @@
     text-align:center;
 } */
 
-.making .making-banner{
-    background-image: url(/src/assets/img/making-banner.jpg);
+#making-banner .row{
+    background-image: url(src/assets/img/making-banner.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+#making-banner{
+    padding-top: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    #making-banner{
+        padding:0px;
+    }
+    #making-banner .col-sm-3{
+        
+    }
 }
