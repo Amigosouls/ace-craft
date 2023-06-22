@@ -10,7 +10,11 @@
           Detailed perfection that makes you look good and feel great. Put it
           on. Its's like magic.
         </p>
-        <h2 class="col-md-7 col-sm-7 col-lg-7 col-xl-7 justify-content-end flex mt-5">Classic | Absolute | Signature</h2>
+        <h2
+          class="col-md-7 col-sm-7 col-lg-7 col-xl-7 justify-content-end flex mt-5"
+        >
+          Classic | Absolute | Signature
+        </h2>
       </div>
     </div>
   </div>
@@ -123,15 +127,75 @@
 
   <div class="container-fluid mt-5" id="making-banner">
     <div class="row text-center">
-       <div class="col-xl-12 col-md-6 col-sm-3">
-        <h4 class="col-md-3 col-sm-3 col-xl-3 offset-4  justify-content-center  align-items-end flex">THE ACECRAFT FIT</h4>
-        <h1 class="col-md-3 col-sm-3 col-xl-3 offset-4  justify-content-center  align-items-end  flex">Comfy. Very comfy.</h1>
-        <p class="col-md-3 col-sm-3 col-xl-3   offset-4  justify-content-center align-items-end flex">
+      <div class="col-xl-12 col-md-8 col-sm-6">
+        <h4
+          class="col-md-8 col-sm-12 col-xl-3 offset-4 justify-content-center align-items-end flex"
+        >
+          THE ACECRAFT FIT
+        </h4>
+        <h1
+          class="col-md-8 col-sm-12 col-xl-3 offset-4 justify-content-center align-items-end flex"
+        >
+          Comfy. Very comfy.
+        </h1>
+        <p
+          class="col-md-8 col-sm-12 col-xl-3 offset-4 justify-content-center align-items-end flex"
+        >
           It's not just the fabric - it's also the fit. The shoulders and
           sleeves fit right while the body feels relaxed, making it undoubtedly
           the best
         </p>
-       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--========================Trials===========================-->
+
+<div class="container-fluid trials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xl">
+        <h1>Your pre-trial. Powered by our AI.</h1>
+        <p>
+          The acecraft Measurement Process is one among the world's most
+          accurate methods. We set up a pre-trial event in your campus and make
+          each one try on the right fit. No more guessing the right size
+          business.
+        </p>
+      </div>
+      <div class="col-8">
+        {{trialCarousel[0].imgUrl}}
+        <div class="card">
+          <p-carousel   [responsiveOptions]="responsiveOptions">
+              <!-- <ng-template *ngFor="let product of trialCarousel" pTemplate="item">
+                
+                  <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                      <div class="mb-3">
+                          <img src={{trialCarousel[0].imgUrl}}  class="w-6 shadow-2" />
+                      </div>
+                      <div>
+                          <h4 class="mb-1">{{ product.id }}</h4>
+                          <h6 class="mt-0 mb-3">{{ '$' + product.id }}</h6>
+                         
+                          <div class="car-buttons mt-5">
+                              <p-button type="button" styleClass="p-button p-button-rounded mr-2" icon="pi pi-search"></p-button>
+                              <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="pi pi-star-fill"></p-button>
+                          </div>
+                      </div>
+                  </div>
+                </ng-template> -->
+                <table border="5px">
+                  <tr>
+                      <th>Val</th>
+                  </tr>
+                  <tr *ngFor="let x of trialCarousel">
+                    <td>{{x.id}}</td>
+                  </tr>
+                </table>
+          </p-carousel>
+      </div>
+      </div>
     </div>
   </div>
 </div>

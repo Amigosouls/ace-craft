@@ -9,6 +9,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotesComponent } from './notes/notes.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollegeComponent } from './college/college.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,17 @@ import { NotesComponent } from './notes/notes.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    NotesComponent
+    NotesComponent,
+    CollegeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TabMenuModule,
     MenubarModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
