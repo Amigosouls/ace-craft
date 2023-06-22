@@ -4,9 +4,9 @@
 
 .p-tabmenu .p-tabmenu-nav{
     background-color: black !important;
-    display:none !important;
-    margin-left: 15% !important;
     justify-content: space-between;
+    justify-content: space-around !important;
+    display: flex !important;
 }
 a{
     background-color: black !important;
@@ -27,7 +27,8 @@ a{
 }
 .p-menuitem-link:focus {
     box-shadow: none !important;
-    border-bottom: 3px white solid !important;
+    border-bottom: 3px rgb(102, 95, 95) solid !important;
+    border-radius: 0px !important;
     font-weight: bolder !important;
     color: #ffffff !important;
 }
@@ -37,8 +38,38 @@ a{
     border-color: #ffffff !important;
     color: #ffffff !important;
     border: none !important;
-    margin-left: 200px !important;
 }
+
+/*========================Footer===================================*/
+.footer .p-menubar{
+    margin:0px !important;
+}
+
+.footer a{
+    background-color: black !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 30px !important;
+    
+}
+
+.footer .p-menuitem-text:hover{
+    color: rgb(255, 255, 255) !important;
+}
+.footer .p-menuitem-link:focus {
+    box-shadow: none !important;
+    border-bottom: 3px rgb(0, 0, 0) solid !important;
+    font-weight: bolder !important;
+    color: #ffffff !important;
+}
+
+.footer .p-menubar{
+    background: black !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
 
 .body{
     overflow-x: hidden !important;

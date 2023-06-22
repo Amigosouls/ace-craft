@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
           { label: 'SCHOOL' },
           { label: 'COLLEGE' , routerLink:'college'},
           { label: 'ENTERPRISE'},
-          { label: 'NOTES',id:"edit" },
+          { label: 'NOTES',id:"edit", routerLink:'notes' },
           { label: 'AIREN MASK' }
       ];
 

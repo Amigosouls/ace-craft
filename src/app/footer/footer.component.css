@@ -1,0 +1,9 @@
+.footer{
+    background-color: black;
+}
+
+.footer .col-12{
+    justify-content: space-around !important;
+    display: flex !important;
+}
+

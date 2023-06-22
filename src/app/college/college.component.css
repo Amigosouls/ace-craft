@@ -22,7 +22,6 @@
 .collections .col-12 p{
     color: rgb(156, 148, 148);
     font-size: 18px;
-    letter-spacing: 1px;
     font-weight: 500;
     text-align: end;
   
@@ -32,9 +31,7 @@
 .collections .col-12 h2{
     color: rgb(156, 148, 148);
     font-size: 25px;
-    word-spacing: 15px;
     font-weight: bolder;
-    margin-top: 70px;
 }
 
 /*=================Making =========================*/

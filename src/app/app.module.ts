@@ -7,12 +7,16 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { MenubarModule } from 'primeng/menubar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { NotesComponent } from './notes/notes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
