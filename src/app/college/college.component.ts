@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as trialsData from 'src/assets/json/trials.json';
 
 @Component({
@@ -6,14 +6,19 @@ import * as trialsData from 'src/assets/json/trials.json';
   templateUrl: './college.component.html',
   styleUrls: ['./college.component.css']
 })
-export class CollegeComponent {
-  constructor(){
-    console.log(this.trialCarousel)
+export class CollegeComponent implements OnInit {
+
+  trialCarousel: Trials[] = [];
+
+ngOnInit(): void {
+  for (const obj of trialsData) {
+    console.log(JSON.stringify(obj))
   }
+}
 
-
-
-  trialCarousel :any=(trialsData as any).default ;
+constructor(){
+  console.log(trialsData)
+}
 
   responsiveOptions = [
     {
@@ -37,5 +42,6 @@ export class CollegeComponent {
 
 interface Trials {
   id:number,
-  imgUrl:string
+  imgUrl:string,
+  
 }
