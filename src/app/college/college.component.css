@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/blenheim-signature');
+
 .collections {
     background-image: url(/assets/img/collections-bg.jpg);
     background-position: center;
@@ -56,6 +58,7 @@
     padding-top: 300px;
     padding-bottom: 100px;
     width: 100%;
+    --bs-gutter-x: 0rem;
 }
 
 #making-banner{
@@ -78,4 +81,72 @@
 
 .trials{
     background-color: black;
+}
+
+.trials .row{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+
+/*=============================Get in Touch ==============================*/
+
+.contact{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/College-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact .row .col-12{
+    padding-top: 400px;
+    padding-bottom: 150px;
+}
+
+.contact .row .col-12 .content h1{
+    text-align: center;
+    color: #978f8f;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.contact .row .col-12 .content h2:nth-child(odd){
+    text-align: center;
+    color: #978f8f;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+    
+}
+.contact .row .col-12 .content h2:nth-child(2){
+    text-align: center;
+    font-family: byFont;
+    color: #978f8f;
+    font-size: 30px; 
+    font-weight: 100;
+}
+.contact .row .col-12 .content p{
+    text-align: center;
+    color: #978f8f;
+    font-size: 25px; 
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-family:'Courier New', Courier, monospace;
+}
+.contact .row .col-12 .content button{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@font-face {
+    font-family: byFont;
+    src: url(src/assets/css/Caveat-VariableFont_wght.ttf);
 }

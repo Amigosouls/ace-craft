@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImgserviceService } from 'src/services/imgservice.service';
 import * as trialsData from 'src/assets/json/trials.json';
 
 @Component({
@@ -7,17 +8,19 @@ import * as trialsData from 'src/assets/json/trials.json';
   styleUrls: ['./college.component.css']
 })
 export class CollegeComponent implements OnInit {
+  constructor(private ImageService : ImgserviceService){
 
-  trialCarousel: Trials[] = [];
+  }
+
+  trialCarousel:any[]=[]
 
 ngOnInit(): void {
-  for (const obj of trialsData) {
-    console.log(JSON.stringify(obj))
-  }
-}
+  this.ImageService.getCarouselImages().subscribe(
+    (response) =>{
+      this.trialCarousel = response
+    }
+  )
 
-constructor(){
-  console.log(trialsData)
 }
 
   responsiveOptions = [
@@ -40,8 +43,3 @@ constructor(){
 
 }
 
-interface Trials {
-  id:number,
-  imgUrl:string,
-  
-}

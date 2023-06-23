@@ -153,9 +153,9 @@
 <!--========================Trials===========================-->
 
 <div class="container-fluid trials">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-xl">
+  <div class="container pt-5">
+    <div class="row pt-5">
+      <div class="col-md-6  col-sm-12 col-lg-4  col-xl-4 pt-5">
         <h1>Your pre-trial. Powered by our AI.</h1>
         <p>
           The acecraft Measurement Process is one among the world's most
@@ -164,49 +164,45 @@
           business.
         </p>
       </div>
-      <div class="col-8">
-        <p-carousel [value]="trialCarousel" [numVisible]="1" 
-        [numScroll]="3" 
-        [circular]="true">
+      <div class="col-md-6 col-sm-12 col-lg-8 col-xl-8 pt-5 justify-content-around flex">
+        <p-carousel [value]="trialCarousel" 
+        [autoplayInterval]="3000"
+        [responsiveOptions]="responsiveOptions">
           <ng-template let-obj pTemplate="item">
               <div class="product-item">
                   <div class="product-item-content">
                       <div class="p-mb-3"></div>
                       <div>
-                          <h4 
-                              class="p-mb-1">
-                              {{ obj.id }}
-                          </h4>
-                          <h4 
-                              class="p-mb-1">
-                              {{ obj.name }}
-                          </h4>
-                         
-                          <div class="car-buttons p-mt-3">
-                              <p-button 
-                                  type="button" 
-                                  styleClass="p-button 
-                                      p-button-rounded p-mr-2" 
-                                  icon="pi pi-search">
-                              </p-button>
-                              <p-button 
-                                  type="button" 
-                                  styleClass="p-button-success 
-                                      p-button-rounded p-mr-2" 
-                                  icon="pi pi-star">
-                              </p-button>
-                              <p-button 
-                                  type="button" 
-                                  styleClass="p-button-help 
-                                      p-button-rounded" 
-                                  icon="pi pi-cog">
-                              </p-button>
-                          </div>
+                          <img class="img-fluid" src="{{obj.imgUrl}}" alt="img" srcset="">
                       </div>
                   </div>
               </div>
           </ng-template>
       </p-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--=================================Get In Touch===========================-->
+<div class="contact container-fluid">
+  <div class="row">
+    <div class="col-12 justify-content-center align-items-center flex">
+      <div class="content">
+        <h1>Designer Uniforms</h1>
+        <div class="flex">
+          <h2 >_____________</h2>
+          <h2 >by</h2>
+          <h2 >_____________</h2>
+        </div>
+        <p class=" justify-content-center flex">
+        acecraft
+        </p>
+        <h2
+          class=" justify-content-center flex"
+        >
+        <button class=" flex">Get In Touch</button>
+        </h2>
       </div>
     </div>
   </div>

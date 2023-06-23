@@ -13,6 +13,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollegeComponent } from './college/college.component';
+import { HttpClientModule } from  '@angular/common/http';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CollegeComponent } from './college/college.component';
     MenubarModule,
     CarouselModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

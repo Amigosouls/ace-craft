@@ -74,3 +74,9 @@ a{
 .body{
     overflow-x: hidden !important;
 }
+
+/*================== College Carousel ==========================*/
+
+.p-carousel .p-carousel-indicators {
+    display: none;
+}
