@@ -1,0 +1,127 @@
+<div class="content">
+  <h1>Designer Uniforms</h1>
+  <div class="flex">
+    <h2>_____________</h2>
+    <h2>by</h2>
+    <h2>_____________</h2>
+  </div>
+  <p class="justify-content-center flex">acecraft</p>
+  <h2 class="justify-content-center flex">
+    <button (click)="showDialog()" class="flex">Get In Touch</button>
+  </h2>
+</div>
+<div class="card flex justify-content-center">
+  <p-dialog
+    header="Get your Uniforms designed and styled by Us!"
+    [(visible)]="visible"
+    [modal]="true"
+    [breakpoints]="{
+      '960px': '75vw',
+      '400px': '75vw',
+      '600px': '50vw',
+      '200px': '50vw'
+    }"
+    [style]="{ width: '30vw', height: '650px' }"
+    [draggable]="false"
+    [resizable]="false"
+  >
+    <form action="">
+      <div class="row">
+        <div class="p-inputgroup flex col-6">
+          <div class="form-floating p-inputgroup-addon mb-1">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">First Name</label>
+          </div>
+        </div>
+        <div class="p-inputgroup flex col-6">
+          <div class="form-floating p-inputgroup-addon mb-1">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Last Name</label>
+          </div>
+        </div>
+
+        <div class="p-inputgroup flex col-12">
+          <div class="form-floating p-inputgroup-addon mb-1">
+            <i class="pi pi-envelope"></i>
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Professional Email</label>
+          </div>
+        </div>
+        <div class="p-inputgroup flex col-12">
+          <div class="form-floating p-inputgroup-addon mb-1">
+            <i class="pi pi-building"></i>
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Organisation</label>
+          </div>
+        </div>
+        <div class="p-inputgroup flex col-12">
+          <div class="form-floating p-inputgroup-addon mb-1">
+            <i class="pi pi-mobile"></i>
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Phone No.</label>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <label for="Required">Quantity Required</label>
+        <div class="form-group col-4 flex justify-content-center">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="exampleRadios2"
+            value="option2"
+          />
+          <label for="">10 - 50 Sets </label>
+        </div>
+        <div class="form-group flex justify-content-center col-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="exampleRadios2"
+            value="option2"
+          />
+          <label for="">51 - 100 Sets </label>
+        </div>
+        <div class="form-group flex justify-content-center col-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="exampleRadios2"
+            value="option2"
+          />
+          <label for="">100+ Sets </label>
+        </div>
+        <button class="btn btn-secondary col-12">Submit</button>
+      </div>
+
+    </form>
+  </p-dialog>
+</div>

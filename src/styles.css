@@ -80,3 +80,26 @@ a{
 .p-carousel .p-carousel-indicators {
     display: none;
 }
+
+
+/*================== Get In touch ===============================*/
+.p-dialog .p-dialog-content {
+    background-color: white !important;
+    color: black !important;
+}
+
+.p-dialog .p-dialog-header {
+    background-color: white !important;
+    color: black !important;
+    text-align: center !important;
+    padding-left: 50px !important;
+    
+}
+.p-dialog .p-dialog-header .p-dialog-title{
+    font-size: 23px !important;
+    width: 80% !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon{
+    color: #000000 !important;
+}

@@ -3,10 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { CollegeComponent } from './college/college.component';
 import { HomeComponent } from './home/home.component';
 import { NotesComponent } from './notes/notes.component';
+import { AirenMaskComponent } from './airen-mask/airen-mask.component';
+import { EnterpriseComponent } from './enterprise/enterprise.component';
 const routes: Routes = [
   {path:'college', component:CollegeComponent},
   {path:'', component:HomeComponent},
-  {path:'notes', component:NotesComponent}
+  {path:'notes', component:NotesComponent},
+  {path:'airen-mask', component:AirenMaskComponent},
+  {path:'enterprise', component:EnterpriseComponent},
+  {path:'home', component:HomeComponent}
 ];
 
 @NgModule({

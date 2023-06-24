@@ -19,9 +19,9 @@ export class NavbarComponent implements OnInit {
       this.items = [
           { label: 'SCHOOL' },
           { label: 'COLLEGE' , routerLink:'college'},
-          { label: 'ENTERPRISE'},
+          { label: 'ENTERPRISE', routerLink:'enterprise'},
           { label: 'NOTES',id:"edit", routerLink:'notes' },
-          { label: 'AIREN MASK' }
+          { label: 'AIREN MASK', routerLink:'airen-mask' }
       ];
 
       this.activeItem = this.items[0];

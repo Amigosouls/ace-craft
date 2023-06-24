@@ -1,0 +1,87 @@
+/*=======================Get in touch ====================*/
+.content h1{
+    text-align: center;
+    color: #978f8f;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+ .content h2:nth-child(odd){
+    text-align: center;
+    color: #978f8f;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+    
+}
+ .content h2:nth-child(2){
+    text-align: center;
+    font-family: byFont;
+    color: #978f8f;
+    font-size: 30px; 
+    font-weight: 100;
+}
+ .content p{
+    text-align: center;
+    color: #978f8f;
+    font-size: 25px; 
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-family:'Courier New', Courier, monospace;
+}
+ .content button{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.card {
+    background-color:transparent;
+}
+
+
+@font-face {
+    font-family: byFont;
+    src: url(src/assets/css/Caveat-VariableFont_wght.ttf);
+}
+
+
+/*==========================get in touch model=======================  */
+
+.form-floating>label{
+    color: black !important;
+    padding-left: 50px !important;
+    padding-top: 10px !important;
+}
+.p-inputgroup-addon{
+    background-color:white;
+    height: 60px;
+    width: 100%;
+}
+.pi{
+    color: black;
+}
+.p-inputgroup .form-floating input{
+    background-color: transparent;
+    padding-left: 20px !important;
+    border: none;
+    
+}
+form .col-12 .row{
+    background-color: aqua;
+    padding-top: -50px;
+}
+form .col-12 .row input{
+    padding-top: -20px;
+}
+form button{
+    border-radius: 30px;
+    border:5px solid gray; 
+}
