@@ -5,13 +5,15 @@ import { HomeComponent } from './home/home.component';
 import { NotesComponent } from './notes/notes.component';
 import { AirenMaskComponent } from './airen-mask/airen-mask.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
+import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
 const routes: Routes = [
   {path:'college', component:CollegeComponent},
   {path:'', component:HomeComponent},
   {path:'notes', component:NotesComponent},
   {path:'airen-mask', component:AirenMaskComponent},
   {path:'enterprise', component:EnterpriseComponent},
-  {path:'home', component:HomeComponent}
+  {path:'home', component:HomeComponent},
+  {path:'notes/:id', component:ViewNotesComponent}
 ];
 
 @NgModule({

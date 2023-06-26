@@ -1,1 +1,59 @@
-<p>view-notes works!</p>
+
+<div class="container" *ngFor="let note of selectedNotes">
+    <div class=" row  justify-content-center flex" *ngIf="note.detailed_description">
+        <h2 class="justify-content-center flex" *ngIf="note.detailed_description.date">{{note.detailed_description.date}}</h2>
+        <h2  class="justify-content-center flex" *ngIf="note.detailed_description.heading">{{note.detailed_description.heading}}</h2>
+        <p class=" col-8  flex" *ngIf="note.detailed_description.about">{{note.detailed_description.about}}</p>
+        <div class="row justify-content-center flex">
+            <div class="col-8">
+                <ul *ngIf="note.detailed_description.content_1">
+                    {{note.detailed_description.content_1.headings}}
+                    <li *ngIf="note.detailed_description.content_1.p1" >{{note.detailed_description.content_1.p1}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_1.p1" >{{note.detailed_description.content_1.p2}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_1.p1" >{{note.detailed_description.content_1.p3}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_1.p1" >{{note.detailed_description.content_1.p4}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_1.p1" >{{note.detailed_description.content_1.p5}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_1.p1" >{{note.detailed_description.content_1.p6}}
+
+                    </li>
+                </ul>
+                <ul *ngIf="note.detailed_description.content_2">
+                    {{note.detailed_description.content_2.headings}}
+                    <li *ngIf="note.detailed_description.content_2.p1" >{{note.detailed_description.content_2.p1}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_2.p2" >{{note.detailed_description.content_2.p2}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_2.p3" >{{note.detailed_description.content_2.p3}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_2.p4" >{{note.detailed_description.content_2.p4}}
+
+                    </li>
+                    <li *ngIf="note.detailed_description.content_2.p5" >{{note.detailed_description.content_2.p5}}
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+           <div class="row justify-content-center flex">
+            <div class="col-8">
+                <h6 *ngIf="note.conclusion">Concluison:</h6>
+                <p *ngIf="note.conclusion">{{note.conclusion}}</p>
+            </div>
+           </div>
+    </div>
+    
+    
+</div>

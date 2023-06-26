@@ -5,14 +5,13 @@
         </div>
     </div>
 
-    <div class="row g3" *ngFor="let note of notesArray">
-        <div class="col-6">
-            <div class="card shadow-4" style="width: 35rem;">
-                <a href="">
+    <div class="row" >
+        <div class="col-md-12 col-xl-6 col-lg-6 col-sm-12" *ngFor="let note of notesArray">
+            <div class="card shadow-4">
                     <div class="card-body flex align-items-center justify-content-center">
-                        <h4>{{note.id | uppercase}}</h4>
+                        <a routerLink="{{note.id}}" ><h4>{{note.id  | spacePipe | uppercase}}</h4></a>
                     </div>
-                </a>
+                
               </div>
             
         </div>

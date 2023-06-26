@@ -11,6 +11,8 @@ export class NotesService {
   getNotes(){
     return this.httpObj.get<NotesViewer[]>(this.notesUrl);
   }
-
+  getNotesById(id:string){
+    return this.httpObj.get<NotesViewer[]>(this.notesUrl+'?id='+id);
+  }
 
 }

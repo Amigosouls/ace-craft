@@ -7,12 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollegeComponent } from './college/college.component';
 import { HttpClientModule } from  '@angular/common/http';
 
+//pipes
+import { SpacePipePipe } from '../shared/space-pipe.pipe';
+
 //user components
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotesComponent } from './notes/notes.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+
 //primeng components
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenubarModule } from 'primeng/menubar';
@@ -26,6 +30,7 @@ import { AirenMaskComponent } from './airen-mask/airen-mask.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +42,8 @@ import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
     GetInTouchComponent,
     AirenMaskComponent,
     EnterpriseComponent,
-    ViewNotesComponent
+    ViewNotesComponent,
+    SpacePipePipe
   ],
   imports: [
     BrowserModule,

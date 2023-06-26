@@ -1,0 +1,17 @@
+.honda{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.honda .row:nth-child(1){
+    background-color: white;
+    
+}
+
+.honda .row:nth-child(2){
+    height: 100vh;
+    padding-bottom: 300px;
+}
