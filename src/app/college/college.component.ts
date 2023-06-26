@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImgserviceService } from 'src/services/imgservice.service';
-import * as trialsData from 'src/assets/json/trials.json';
+
 
 @Component({
   selector: 'app-college',

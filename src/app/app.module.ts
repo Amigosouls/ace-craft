@@ -24,6 +24,7 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { AirenMaskComponent } from './airen-mask/airen-mask.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
+import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EnterpriseComponent } from './enterprise/enterprise.component';
     CollegeComponent,
     GetInTouchComponent,
     AirenMaskComponent,
-    EnterpriseComponent
+    EnterpriseComponent,
+    ViewNotesComponent
   ],
   imports: [
     BrowserModule,

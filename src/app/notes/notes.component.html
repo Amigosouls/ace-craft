@@ -5,7 +5,16 @@
         </div>
     </div>
 
-    <div class="row">
-
+    <div class="row g3" *ngFor="let note of notesArray">
+        <div class="col-6">
+            <div class="card shadow-4" style="width: 35rem;">
+                <a href="">
+                    <div class="card-body flex align-items-center justify-content-center">
+                        <h4>{{note.id | uppercase}}</h4>
+                    </div>
+                </a>
+              </div>
+            
+        </div>
     </div>
 </div>

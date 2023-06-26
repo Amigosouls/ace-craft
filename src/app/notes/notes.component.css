@@ -1,0 +1,18 @@
+.container .card-body{
+    background-color: black;
+}
+.container .card a{
+    text-decoration: none;
+}
+
+.container .card{
+    height: 300px;
+    padding: 3px;
+    padding-bottom: 70px;
+}
+
+.container .card-body h4{
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+}

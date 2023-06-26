@@ -1,18 +1,23 @@
-import { Component } from '@angular/core';
-import * as jsonNotes from 'src/assets/json/notes.json'
+import { Component, OnInit } from '@angular/core';
+import { NotesService } from 'src/services/notes-service.service';
 
 @Component({
   selector: 'app-notes',
   templateUrl: './notes.component.html',
   styleUrls: ['./notes.component.css']
 })
-export class NotesComponent {
+export class NotesComponent implements OnInit {
+  notesArray : any[] =[]; 
 
-  notes = jsonNotes;
+  constructor(private notesObj:NotesService){
 
-}
-
-interface Notes{
-  id:number;
-  description : string
+  }
+  ngOnInit(): void {
+    this.notesObj.getNotes().subscribe(
+      (response)=>{
+        this.notesArray = response
+        console.log(response)
+      }
+    )
+  }
 }
