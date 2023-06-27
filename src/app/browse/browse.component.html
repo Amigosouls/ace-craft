@@ -1,0 +1,30 @@
+<div class="container-fluid browse">
+  <div class="row flex justify-content-center align-content-center">
+    <div class="col-5 ">
+        <h2 class="justify-content-center flex">Decode</h2>
+        <h4 class="justify-content-center flex">your kind of designer uniforms</h4>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <h5>{{schoolId |uppercase}}<span>- {{productCount}} items</span></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3>{{schoolId | uppercase}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-xl-4 mb-3 col-md-6 col-sm-6 flex justify-content-evenly" *ngFor="let prod of productList">
+            <div class="card" style="width: 18rem;">
+                <img src="{{prod.prod_img}}" class="card-img-top" height="300px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">{{prod.name}}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

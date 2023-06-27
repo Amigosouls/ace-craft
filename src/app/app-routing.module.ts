@@ -6,6 +6,8 @@ import { NotesComponent } from './notes/notes.component';
 import { AirenMaskComponent } from './airen-mask/airen-mask.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
+import { SchoolComponent } from './school/school.component';
+import { BrowseComponent } from './browse/browse.component';
 const routes: Routes = [
   {path:'college', component:CollegeComponent},
   {path:'', component:HomeComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:'airen-mask', component:AirenMaskComponent},
   {path:'enterprise', component:EnterpriseComponent},
   {path:'home', component:HomeComponent},
-  {path:'notes/:id', component:ViewNotesComponent}
+  {path:'notes/:id', component:ViewNotesComponent},
+  {path:'school',component:SchoolComponent},
+  {path:'browse/:id',component:BrowseComponent}
 ];
 
 @NgModule({

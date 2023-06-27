@@ -1,0 +1,9 @@
+.browse{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/MJK07401.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.browse .row{
+    height: 100vh;
+}

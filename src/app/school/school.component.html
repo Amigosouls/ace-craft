@@ -1,0 +1,10 @@
+<!--====================School==========================-->
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-2 col-lg-1 col-sm-3 col-xl-1 text-center" *ngFor="let school of schoolList">
+            <a routerLink="{{['/browse/'+school.id]}}"><img src="{{school.school_img}}"  height="50px" alt="" srcset=""></a>
+            <p>{{school.school_name |uppercase | spacePipe}}</p>
+        </div>
+    </div>
+</div>

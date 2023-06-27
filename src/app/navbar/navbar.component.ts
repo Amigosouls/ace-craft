@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
       this.items = [
-          { label: 'SCHOOL' },
+          { label: 'SCHOOL', routerLink:'school' },
           { label: 'COLLEGE' , routerLink:'college'},
           { label: 'ENTERPRISE', routerLink:'enterprise'},
           { label: 'NOTES',id:"edit", routerLink:'notes' },

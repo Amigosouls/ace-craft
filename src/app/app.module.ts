@@ -29,7 +29,9 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { AirenMaskComponent } from './airen-mask/airen-mask.component';
 import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
-
+import { SchoolComponent } from './school/school.component';
+import { BrowseComponent } from './browse/browse.component';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
     AirenMaskComponent,
     EnterpriseComponent,
     ViewNotesComponent,
-    SpacePipePipe
+    SpacePipePipe,
+    SchoolComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,8 @@ import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
     BrowserAnimationsModule,
     ButtonModule,
     HttpClientModule,
-    DialogModule
+    DialogModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
