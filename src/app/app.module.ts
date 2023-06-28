@@ -33,6 +33,8 @@ import { SchoolComponent } from './school/school.component';
 import { BrowseComponent } from './browse/browse.component';
 import { CardModule } from 'primeng/card';
 import { ProductComponent } from './product/product.component';
+import { InputNumberModule } from 'primeng/inputnumber';
+
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { ProductComponent } from './product/product.component';
     ButtonModule,
     HttpClientModule,
     DialogModule,
-    CardModule
+    CardModule,
+    InputNumberModule
   ],
   providers: [],
   bootstrap: [AppComponent]

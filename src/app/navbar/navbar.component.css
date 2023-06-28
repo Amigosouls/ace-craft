@@ -4,7 +4,7 @@
     background-color: black;
 }
 
-.navbar h2{
+.navbar h2,ul{
     color: beige;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 10px;
@@ -14,4 +14,19 @@
 }
 .navbar a{
     text-decoration: none;
+}
+
+.navbar .row:nth-child(2){
+    position: relative;
+    width: 100%;
+}
+
+.pi{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.badge{
+    margin-left: 80px;
+    letter-spacing: 0px;
 }

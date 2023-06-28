@@ -8,6 +8,8 @@ import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
 import { SchoolComponent } from './school/school.component';
 import { BrowseComponent } from './browse/browse.component';
+import { ProductComponent } from './product/product.component';
+
 const routes: Routes = [
   {path:'college', component:CollegeComponent},
   {path:'', component:HomeComponent},
@@ -17,7 +19,8 @@ const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'notes/:id', component:ViewNotesComponent},
   {path:'school',component:SchoolComponent},
-  {path:'browse/:id',component:BrowseComponent}
+  {path:'browse/:id',component:BrowseComponent},
+  {path:'product/:id', component:ProductComponent}
 ];
 
 @NgModule({

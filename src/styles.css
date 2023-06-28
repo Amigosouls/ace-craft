@@ -38,7 +38,26 @@ a{
     border-color: #ffffff !important;
     color: #ffffff !important;
     border: none !important;
+   
 }
+.p-element{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.p-menubar ul{
+    padding-left: 200px !important;
+
+}
+
+@media screen and (max-Width:800px) {
+    .p-menubar ul{
+        width: 300px !important;
+        background-color:black !important;
+        padding-left: 0px !important;
+    }
+}
+
 
 /*========================Footer===================================*/
 .footer .p-menubar{

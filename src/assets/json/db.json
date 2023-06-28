@@ -109,8 +109,15 @@
             "id":"NHIS-Day-Wear-Polo-Boys-Girls-Nursery-Grade-5",
             "name":"NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
             "category":"school",
-            "prod_img":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg"
-
+            "prod_img":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg",
+            "product_code":"NHISDWT32",
+            "brand":"ACECRAFT",
+            "sold_by":"Alchemy",
+            "price":450,
+            "sell_price":340,
+            "description":["no returns & no exchange ","Made from Poly-cotton. Polo Tshirt. Short sleeves"],
+            "discount":24,
+            "sizes":[18,20,22,24,26,28,30,32]
         },
         {
             "id":"CIS-Royal-Day-Wear-Grade-1-5",

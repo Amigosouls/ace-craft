@@ -1,1 +1,53 @@
-<p>product works!</p>
+<div class="container-fluid product">
+    <div class="container">
+        <div class="row justify-content-center" *ngFor="let prod of activeProduct">
+            <div class="col-xl-6 col-md-12 col-sm-12 col-lg-6">
+                <img src="{{prod.prod_img}}" alt="" srcset="">
+            </div>
+            <div class="col-xl-6 col-md-12 col-sm-12 col-lg-6">
+                <h3>{{prod.name}}</h3>
+                <h6>Product Code: {{prod.product_code}}</h6>
+                <h6>Brand: {{prod.brand}}</h6>
+                <h6>Sold By: {{prod.sold_by}}</h6>
+                <h1>{{prod.sell_price | currency :'INR' :'symbol':'0.0'  }} <s><span>{{prod.price | currency :'INR' :'symbol':'0.0' }}</span></s></h1>
+                <h4 class="flex justify-content-start">{{prod.discount}}% OFF</h4>
+                <button class="mt-5">SIZE GUIDE</button>
+                <div class="p-inputgroup mt-5">
+                    <span class="p-inputgroup-addon">
+                        Size:
+                    </span>
+                   <select name="sizes" id="sizes">
+                    <option value="" *ngFor="let size of prod.sizes">{{size}}</option>
+                   </select>
+                </div>
+                <div class="p-inputgroup mt-5 ">
+                    <span class="p-inputgroup-addon">
+                        Quantity:
+                    </span>
+                    <p-inputNumber  inputId="withoutgrouping" > </p-inputNumber>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <p>Description of the product<p>
+        </div>
+        <div class="row">
+            <h6 *ngFor="let desc of activeProduct[0].description">{{desc}}</h6>
+        </div>
+        <div class="row">
+            <p>Related Products</p>
+        </div>
+    </div>
+    
+</div>

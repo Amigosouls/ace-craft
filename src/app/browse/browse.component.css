@@ -7,3 +7,17 @@
 .browse .row{
     height: 100vh;
 }
+
+a{
+    text-decoration: none;
+    background-color: white;
+}
+
+.card-text{
+    color: black;
+    
+}
+
+.card{
+    border: none;
+}
