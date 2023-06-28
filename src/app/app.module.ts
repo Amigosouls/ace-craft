@@ -32,6 +32,7 @@ import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
 import { SchoolComponent } from './school/school.component';
 import { BrowseComponent } from './browse/browse.component';
 import { CardModule } from 'primeng/card';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { CardModule } from 'primeng/card';
     ViewNotesComponent,
     SpacePipePipe,
     SchoolComponent,
-    BrowseComponent
+    BrowseComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

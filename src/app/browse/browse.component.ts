@@ -11,6 +11,7 @@ export class BrowseComponent implements OnInit {
   schoolId !:string
   productCount = 0;
   productList :any=[];
+
   
   constructor(private router: ActivatedRoute, private prodObj :ProductService){
 
@@ -19,7 +20,8 @@ export class BrowseComponent implements OnInit {
     this.schoolId = this.router.snapshot.params['id'];
     this.prodObj.getProductsByCategory(this.schoolId).subscribe(
       (response)=>{
-        this.productList=response
+        this.productList=response;
+        this.productCount = response.length;
       }
     )
   }
