@@ -26,5 +26,10 @@ export class NavbarComponent implements OnInit {
 
       this.activeItem = this.items[0];
   }
+  setId(id:string){
+    this.idValue=id
+  }
+
+  idValue=""
 
 }

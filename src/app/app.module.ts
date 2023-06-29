@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollegeComponent } from './college/college.component';
 import { HttpClientModule } from  '@angular/common/http';
-
+import { ReactiveFormsModule } from '@angular/forms';
 //pipes
 import { SpacePipePipe } from '../shared/space-pipe.pipe';
 
@@ -16,7 +16,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotesComponent } from './notes/notes.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
-
+import { UserComponent } from './user/user.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
 //primeng components
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenubarModule } from 'primeng/menubar';
@@ -35,6 +37,8 @@ import { CardModule } from 'primeng/card';
 import { ProductComponent } from './product/product.component';
 import { InputNumberModule } from 'primeng/inputnumber';
 
+import { ToastModule } from 'primeng/toast';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,11 @@ import { InputNumberModule } from 'primeng/inputnumber';
     SpacePipePipe,
     SchoolComponent,
     BrowseComponent,
-    ProductComponent
+    ProductComponent,
+    UserComponent,
+    LoginComponent,
+    RegisterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +72,9 @@ import { InputNumberModule } from 'primeng/inputnumber';
     HttpClientModule,
     DialogModule,
     CardModule,
-    InputNumberModule
+    InputNumberModule,
+    ReactiveFormsModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
