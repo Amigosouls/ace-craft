@@ -1,26 +1,30 @@
 <!-- ========== Navbar============== -->
 
-<div class="navbar border-noround card sticky-top align-items-center justify-content-center">
-  <div class="row">
+<div class="navbar border-noround card position-relative sticky-top align-items-center justify-content-center">
+  <div class="row flex-block">
     <div class="col-12">
       <a routerLink="home"><h2>acecraft</h2></a>
     </div>
     
   </div>
   <div class="row ">
-     <div class="col-10">
+     <div>
       <p-menubar [model]="items " >
        
       </p-menubar>
      </div>
-      <div class="col-2 ms-auto">
-        <ul class=" login-signup  justify-content-end" >
-          <span class="pi pi-cog"> <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">99+
-          </span>
+      <span class="col-2 login-signup ms-auto flex">
+        <ul class=" " >
+          <span class="pi pi-cog dropdown">
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
         </span>
-          <span class="pi pi-shopping-cart"></span>
+          <span class="pi pi-shopping-cart "> <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">99+</span></span>
         </ul>
-      </div>
+      </span>
   </div>
 </div>
 

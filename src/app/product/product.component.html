@@ -16,8 +16,8 @@
                     <span class="p-inputgroup-addon">
                         Size:
                     </span>
-                   <select name="sizes" id="sizes">
-                    <option value="" *ngFor="let size of prod.sizes">{{size}}</option>
+                   <select  name="sizes" id="sizes">
+                    <option *ngFor="let size of prod.sizes">{{size}}</option>
                    </select>
                 </div>
                 <div class="p-inputgroup mt-5 ">

@@ -45,16 +45,11 @@ a{
     justify-content: center !important;
 }
 
-.p-menubar ul{
-    padding-left: 200px !important;
-
-}
-
 @media screen and (max-Width:800px) {
     .p-menubar ul{
         width: 300px !important;
         background-color:black !important;
-        padding-left: 0px !important;
+        left:-150px !important;
     }
 }
 

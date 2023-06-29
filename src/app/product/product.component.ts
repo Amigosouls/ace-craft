@@ -11,7 +11,7 @@ import { ProductService } from 'src/services/product.service';
 export class ProductComponent implements OnInit{
   productId="";
   activeProduct :any=[]
-
+  size=0;
 
   constructor(private routerObj:ActivatedRoute , private serviceObj : ProductService ){
 
@@ -21,6 +21,7 @@ export class ProductComponent implements OnInit{
     this.serviceObj.getProductsById(this.productId).subscribe(
       (response)=>{
         this.activeProduct= response;
+        console.log(response[0].stock)
       }
     )
   }
