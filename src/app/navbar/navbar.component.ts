@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { CartService } from 'src/services/cart.service';
 
 
 
@@ -10,8 +11,11 @@ import { MenuItem } from 'primeng/api';
 })
 export class NavbarComponent implements OnInit {
 
-  
+  constructor(private cartObj: CartService){}
+
   items: MenuItem[] |any;
+  cartList :any=[]
+  cartCount:number=0
 
   activeItem: MenuItem | any;
 
@@ -25,6 +29,20 @@ export class NavbarComponent implements OnInit {
       ];
 
       this.activeItem = this.items[0];
+      this.cartObj.countSubject.subscribe(
+        (response)=>{
+          console.log(response)
+          this.cartCount = response;
+        }
+      )
+      this.cartObj.getCartItems().subscribe(
+        (response)=>{
+          this.cartList=response
+          this.cartCount=this.cartList.length;
+          console.log(this.cartCount)
+        }
+      )
+
   }
   setId(id:string){
     this.idValue=id

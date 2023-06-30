@@ -136,22 +136,112 @@
       "name": "CIS Royal Day Wear (Grade 1-5)",
       "category": "school",
       "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
-      "stock": [
-        {
-          "stock_code": "NHISDWT18",
-          "prize": 450,
-          "selling_prize": 350,
-          "discount": 24,
-          "stock_left": 20
-        },
-        {
-          "stock_code": "NHISDWT20",
-          "prize": 450,
-          "selling_prize": 350,
-          "discount": 24,
-          "stock_left": 20
-        }
+      "product_code": "NHISDWT18",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 749,
+      "sell_price": 450,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
       ],
+      "discount": 40,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "id": 2
+    },
+    {
+      "id": 3,
+      "prod_id": "NHG-Shirt-Girls-Grade-1-10",
+      "name": "NHG Shirt [Girls, Grade 1-10]",
+      "category": "school",
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 535,
+      "sell_price": 355,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
+      ],
+      "discount": 24,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
+    },
+    {
+      "id": 4,
+      "prod_id": "CIS-Sky-Day-Wear-Grade-6-8",
+      "name": "CIS Sky Day Wear (Grade 6-8)",
+      "category": "school",
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 825,
+      "sell_price": 500,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
+      ],
+      "discount": 24,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
+    },
+    {
+      "id": 9,
+      "prod_id": "NHG-Shirt-Boys-Grade-1-10",
+      "name": "NHG Shirt [Boys, Grade 1-10]",
+      "category": "school",
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 535,
+      "sell_price": 355,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
+      ],
+      "discount": 34,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
+    },
+    {
+      "id": 5,
+      "prod_id": "NHG-County-Shirt-Girls-Grade-11-12",
+      "name": "NHG County Shirt [Girls, Grade 11-12]",
+      "category": "school",
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
       "brand": "ACECRAFT",
       "sold_by": "Alchemy",
       "price": 450,
@@ -170,57 +260,85 @@
         28,
         30,
         32
-      ],
-      "id": 2
-    },
-    {
-      "id": 3,
-      "prod_id": "NHG-Shirt-Girls-Grade-1-10",
-      "name": "NHG Shirt [Girls, Grade 1-10]",
-      "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg"
-    },
-    {
-      "id": 4,
-      "prod_id": "CIS-Sky-Day-Wear-Grade-6-8",
-      "name": "CIS Sky Day Wear (Grade 6-8)",
-      "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg"
-    },
-    {
-      "id": 9,
-      "prod_id": "NHG-Shirt-Boys-Grade-1-10",
-      "name": "NHG Shirt [Boys, Grade 1-10]",
-      "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg"
-    },
-    {
-      "id": 5,
-      "prod_id": "NHG-County-Shirt-Girls-Grade-11-12",
-      "name": "NHG County Shirt [Girls, Grade 11-12]",
-      "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg"
+      ]
     },
     {
       "id": 6,
       "prod_id": "CIS-White-Day-Wear-Grade-9-10",
       "name": "CIS White Day Wear (Grade 9 & 10)",
       "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 450,
+      "sell_price": 340,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
+      ],
+      "discount": 24,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
     },
     {
       "id": 7,
       "prod_id": "NHG-County-Shirt-Boys-Grade-11-12",
       "name": "NHG County Shirt [Boys, Grade 11-12]",
       "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614b1b723d40d4a3954a/webp/front-view-nhg-shirt-boys-grade-11-12--480x480.jpg"
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614b1b723d40d4a3954a/webp/front-view-nhg-shirt-boys-grade-11-12--480x480.jpg",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 450,
+      "sell_price": 340,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
+      ],
+      "discount": 24,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
     },
     {
       "id": 8,
       "prod_id": "CIS-White-Day-Wear-Grade-11-12",
       "name": "CIS White Day Wear (Grade 11 & 12)",
       "category": "school",
-      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d706374c88c6b06d39dc1/webp/h-school-480x480.jpg"
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d706374c88c6b06d39dc1/webp/h-school-480x480.jpg",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 450,
+      "sell_price": 340,
+      "description": [
+        "no returns & no exchange ",
+        "Made from Poly-cotton. Polo Tshirt. Short sleeves"
+      ],
+      "discount": 24,
+      "sizes": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ]
     }
   ],
   "Users": [
@@ -256,7 +374,7 @@
       ],
       "userid": 3,
       "quantity": 1,
-      "size": "22",
+      "size": "20",
       "id": 1
     }
   ]

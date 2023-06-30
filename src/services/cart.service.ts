@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProductModel } from 'src/model/product-model';
 import { UserService } from './user.service';
+import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  arr:any=[]
  
   cartUrl="http://localhost:3000/Cart";
 
@@ -20,12 +22,36 @@ export class CartService {
     )
   }
 
+  deleteFromCart(id:number){
+    this.httpObj.delete(this.cartUrl+'/'+id).subscribe(
+      (response)=>{
+        console.log(response);
+      }
+    )
+  }
 
+  increaseCartQuantity(id:number, product:ProductModel){
+    this.httpObj.put<ProductModel>(this.cartUrl+'/'+id,product).subscribe(
+   
+    )
+  }
 
   getCartItems(){
     
     return this.httpObj.get<ProductModel>(this.cartUrl+'')
     
+  }
+
+  public countSubject = new Subject<number>();
+
+  getCount(){
+    return this.getCartItems().subscribe(
+      (res) => {
+        console.log(this.arr);
+        this.arr=res;
+        this.countSubject.next(this.arr.length)
+      }
+    )
   }
 
 }

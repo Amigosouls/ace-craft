@@ -1,8 +1,14 @@
 <div class="container-fluid cart">
-    <div class="container justify-content-center flex" *ngIf="cartCount >0">
-        <table>
-            <div class="row text-center ">
-                <h1>Your bag Total is {{total}}</h1>
+    <div class="container" *ngIf="cartCount<1">
+        <div class="row flex justify-content-center">
+            <h5 class="text-center mt-5">Your cart is Empty</h5>
+            <button routerLink="/" class="btn w-25 mt-3 mb-5 btn-light shopping">Continue Shopping</button>
+        </div>
+
+    </div>
+    <div class="container justify-content-center" *ngIf="cartCount >0">
+            <div class="row text-center pt-5 pb-5">
+                <h1>Your bag Total is {{cartTotal(cartList) | currency :'INR'}}</h1>
             </div>
             <div class="row text-center" *ngFor="let product of cartList">
                 <div class="col-3">
@@ -10,15 +16,26 @@
                 </div>
                 <div class="col-4">
                     <h4>{{product.name}}</h4>
+                    <h6>Size:{{product.size}}</h6>
                 </div>
                 <div class="col-2">
-                    <h5>{{product.quantity}}</h5>
+                    <h5>
+                        
+                        <button class="btn- btn-light border-0" *ngIf="product.quantity>1" (click)="decreeCount(product)" >-</button>
+                        {{product.quantity}}
+                        <button class="btn- btn-light border-0" (click)="increeCount(product)" >+</button>
+                    </h5>
                 </div>
                 <div class="col-3">
-                    <h3>{{product.sell_price}}</h3>
-                    <a href="">Remove Item</a>
+                    <h3>{{product.sell_price | currency : 'INR'}}</h3>
+                    <button (click)="deleteCart(product.id)">Remove Item</button>
                 </div>
             </div>
-        </table>
+            <div class="row">
+                <div class="col-4">
+                    <h5>Enter Coupon</h5>
+                    <input type="text" name="" id=""><button class="">Apply</button>
+                </div>
+            </div>
     </div>
 </div>

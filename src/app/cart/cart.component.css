@@ -1,0 +1,15 @@
+.cart .row{
+    border-bottom: 2px solid black;
+}
+
+.cart .container .shopping{
+    border: 2px solid black;
+}
+
+.cart .container{
+    min-height: 70vh;
+}
+
+.cart .container .row:last-child{
+    border-bottom: none;
+}

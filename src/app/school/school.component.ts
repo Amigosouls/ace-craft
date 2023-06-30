@@ -1,5 +1,4 @@
 import { Component,OnInit } from '@angular/core';
-import { count } from 'rxjs';
 import { SchoolService } from 'src/services/school.service';
 
 @Component({

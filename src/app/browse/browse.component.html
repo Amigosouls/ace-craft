@@ -17,14 +17,23 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
+    <div class="col-3">
       <h3>{{ schoolId | uppercase }}</h3>
+    </div>
+    <div class="col-3 ms-auto">
+      <select (change)="getSortedList($event)" name="" id="">
+        <option value="" disabled selected hidden>SORT BY</option>
+        <option value="lth">Price : Low to High</option>
+        <option value="htl">Price : High to Low</option>
+        <option value="nasc">Name : Ascending Order</option>
+        <option value="ndesc">Name : Descending Order</option>
+      </select>
     </div>
   </div>
   <div class="row g0">
     <div
       class="col-lg-4 col-xl-4 mb-3 col-md-6 col-sm-6 flex justify-content-evenly"
-      *ngFor="let prod of productList"
+      *ngFor="let prod of productList |sortProduct : [sortParam, sortOrder]"
     >
       <div class="card text-center" style="width: 20rem">
        <a routerLink="{{['/product/'+prod.id]}}">

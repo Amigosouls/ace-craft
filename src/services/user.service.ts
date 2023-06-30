@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Users } from 'src/model/users';
+import { Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,25 @@ export class UserService {
 
    getUser(){
    return this.httpObj.get<Users[]>(this.usersUrl)
+   }
+
+
+   public authorisationSubject = new Subject<boolean>();
+
+   validateAuth(data:boolean){
+    this.authorisationSubject.next(data);
+   }
+
+
+   value?:boolean;
+
+   getAuthorisationStatus(){
+    this.authorisationSubject.subscribe(
+      data=>{
+        this.value=data;
+      }
+    );
+    return this.value;
    }
 
 }

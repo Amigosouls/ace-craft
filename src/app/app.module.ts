@@ -40,6 +40,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 
 import { ToastModule } from 'primeng/toast';
 import { CartComponent } from './cart/cart.component';
+import { SortProductPipe } from '../shared/sort-product.pipe';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { CartComponent } from './cart/cart.component';
     UserComponent,
     LoginComponent,
     RegisterComponent,
-    CartComponent
+    CartComponent,
+    SortProductPipe
   ],
   imports: [
     BrowserModule,
