@@ -16,7 +16,7 @@
                     <span class="p-inputgroup-addon">
                         Size:
                     </span>
-                   <select  name="sizes" id="sizes">
+                   <select [(ngModel)]=size name="sizes" id="sizes">
                     <option *ngFor="let size of prod.sizes">{{size}}</option>
                    </select>
                 </div>
@@ -24,12 +24,12 @@
                     <span class="p-inputgroup-addon">
                         Quantity:
                     </span>
-                    <p-inputNumber  inputId="withoutgrouping" > </p-inputNumber>
+                    <input [(ngModel)]="quantity" min="1" max="25" inputId="withoutgrouping" >
                 </div>
                 <div class="col-12">
                     <div class="row">
                         <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
-                            <button>Add to cart</button>
+                            <button (click)="addProduct(prod)" >Add to cart</button>
                         </div>
                         <div class="col-lg-4 col-xl-4 col-md-4 col-sm-4">
                             <button>Buy Now</button>

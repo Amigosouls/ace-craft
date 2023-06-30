@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollegeComponent } from './college/college.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 //pipes
 import { SpacePipePipe } from '../shared/space-pipe.pipe';
 
@@ -74,7 +75,8 @@ import { CartComponent } from './cart/cart.component';
     CardModule,
     InputNumberModule,
     ReactiveFormsModule,
-    ToastModule
+    ToastModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

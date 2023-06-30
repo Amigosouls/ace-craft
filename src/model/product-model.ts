@@ -1,16 +1,18 @@
 export interface ProductModel {
-  id: string;
+  prod_id: string;
   name: string;
   category: string;
   prod_img: string;
-  stock:Stock;
   product_code:string;
   brand: string;
   sold_by:string;
   price: number;
+  sell_price:number
   discount: number;
-  sizes:any;
   description:Array<string>;
+  userid:number;
+  quantity:number;
+  size:number
 }
 
 interface Stock{

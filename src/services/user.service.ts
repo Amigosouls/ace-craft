@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
+  userId =0
 
   usersUrl = "http://localhost:3000/Users"
   constructor(private httpObj:HttpClient) {
@@ -22,9 +23,12 @@ export class UserService {
     )
    }
 
+   getActiveUser(){
+    return this.httpObj.get<Users[]>(this.usersUrl+'?logged_like=true')
+   }
+
    putUsers(userList:Users,id:number){
     userList.logged=true;
-    console.log("hi")
     this.httpObj.put<Users>(this.usersUrl+'/'+id,userList).subscribe(
       (response)=>{
         console.log(response);

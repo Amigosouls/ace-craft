@@ -1,1 +1,24 @@
-<p>cart works!</p>
+<div class="container-fluid cart">
+    <div class="container justify-content-center flex" *ngIf="cartCount >0">
+        <table>
+            <div class="row text-center ">
+                <h1>Your bag Total is {{total}}</h1>
+            </div>
+            <div class="row text-center" *ngFor="let product of cartList">
+                <div class="col-3">
+                    <img src="{{product.prod_img}}" class="img-fluid" alt="" srcset="">
+                </div>
+                <div class="col-4">
+                    <h4>{{product.name}}</h4>
+                </div>
+                <div class="col-2">
+                    <h5>{{product.quantity}}</h5>
+                </div>
+                <div class="col-3">
+                    <h3>{{product.sell_price}}</h3>
+                    <a href="">Remove Item</a>
+                </div>
+            </div>
+        </table>
+    </div>
+</div>
