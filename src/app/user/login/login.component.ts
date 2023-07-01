@@ -4,6 +4,9 @@ import { UserService } from 'src/services/user.service';
 import { MessageService } from 'primeng/api';
 import { Users } from 'src/model/users';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,7 +14,7 @@ import { Router } from '@angular/router';
   providers: [MessageService]
 })
 export class LoginComponent implements OnInit {
-
+  isLogged:boolean=false;
   loginForm !: FormGroup;
   username : FormControl | any;
   password : FormControl | any;
@@ -45,8 +48,13 @@ export class LoginComponent implements OnInit {
     for (const users of this.userList) {
       if((users.useremail==form.value.username) && (users.confirmpassword==form.value.password)) {
         this.userObj.putUsers(users,users.id);
-        //this.router.navigate(['/home'])
+        this.isLogged=true;
+        alert("login Success")
+        this.router.navigate(['/home'])
         break;
+      }
+      if(!this.isLogged){
+        alert("No user found with this email or password");
       }
     }
     
