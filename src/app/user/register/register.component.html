@@ -22,11 +22,12 @@
                 }"
               />
             </div>
-            <span class="feedback" *ngIf="firstname.invalid">
+            <span class="feedback" *ngIf="firstname.invalid && firstname.touched">
               <!--*ngIf Directive-->
               <strong *ngIf="firstname.errors?.required"
                 >Username is required</strong
               >
+              
             </span>
           </div>
           <div class="form-group mt-3">
@@ -43,7 +44,7 @@
                 }"
               />
             </div>
-            <span class="feedback" *ngIf="lastname.invalid">
+            <span class="feedback" *ngIf="lastname.invalid && lastname.touched ">
               <!--*ngIf Directive-->
               <strong *ngIf="lastname.errors?.required"
                 >Password is required</strong
@@ -64,6 +65,15 @@
                 }"
               />
             </div>
+            <span class="feedback" *ngIf="useremail.invalid && useremail.touched">
+              <!--*ngIf Directive-->
+              <strong *ngIf="useremail.errors?.required">
+               Email is required</strong
+              >
+              <strong *ngIf="useremail.errors?.email"
+                >Not a valid email</strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <div class="input-group">
@@ -71,8 +81,15 @@
                 type="password"
                 class="form-control"
                 placeholder="password"
+                formControlName="password"
               />
             </div>
+            <span class="feedback" *ngIf="password.invalid && password.touched ">
+              <!--*ngIf Directive-->
+              <strong *ngIf="password.errors?.required">
+               Password is required</strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <div class="input-group">
@@ -81,6 +98,7 @@
                 formControlName="confirmpassword"
                 class="form-control"
                 placeholder="Confirm Password"
+                (keyup)="matchPasswords(password.value,confirmpassword.value)"
                 [ngClass]="{
                   'is-invalid':
                     signupform.errors &&
@@ -89,6 +107,14 @@
                 }"
               />
             </div>
+            <span class="feedback" *ngIf="confirmpassword.invalid&& confirmpassword.touched || notmatched ">
+              <!--*ngIf Directive-->
+              <strong *ngIf="confirmpassword.errors?.required">
+               confirmpassword is required</strong
+              >
+              <strong *ngIf=notmatched>
+                password don't match </strong>
+            </span>
           </div>
           <div class="form-group mt-3 text-center">
             <input
@@ -109,6 +135,12 @@
 
             />
             <label class="ms-2" for="companytype">Enterprise</label>
+            <span class="feedback d-block" *ngIf="companytype.invalid">
+              <!--*ngIf Directive-->
+              <strong *ngIf="companytype.errors?.required">
+               Please select an option </strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <div class="input-group">
@@ -125,6 +157,12 @@
                 }"
               />
             </div>
+            <span class="feedback " *ngIf="dealershipname.invalid && dealershipname.touched">
+              <!--*ngIf Directive-->
+              <strong *ngIf="dealershipname.errors?.required">
+               Provide dealership name </strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <div class="input-group">
@@ -141,6 +179,12 @@
                 }"
               />
             </div>
+            <span class="feedback d-block" *ngIf="dealershipcode.invalid && dealershipcode.touched">
+              <!--*ngIf Directive-->
+              <strong *ngIf="dealershipcode.errors?.required">
+               Provide dealership code</strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <div class="input-group">
@@ -156,6 +200,12 @@
                 }"
               />
             </div>
+            <span class="feedback d-block" *ngIf="city.invalid && city.touched">
+              <!--*ngIf Directive-->
+              <strong *ngIf="city.errors?.required">
+               City is required</strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <label for="state" class="align-content-start flex">State</label>
@@ -211,6 +261,12 @@
               <option value="Uttarakhand">Uttarakhand</option>
               <option value="West Bengal">West Bengal</option>
             </select>
+            <span class="feedback d-block" *ngIf="state.invalid && state.touched">
+              <!--*ngIf Directive-->
+              <strong *ngIf="state.errors?.required">
+               Select a state</strong
+              >
+            </span>
           </div>
           <div class="form-group mt-3">
             <div class="input-group">
@@ -226,6 +282,12 @@
                 }"
               />
             </div>
+            <span class="feedback d-block" *ngIf="gstnumber.invalid && gstnumber.touched">
+              <!--*ngIf Directive-->
+              <strong *ngIf="gstnumber.errors?.required">
+               GST number is required</strong
+              >
+            </span>
           </div>
           <button class="form-control mt-5 btn" type="submit">Sign Up</button>
         </form>

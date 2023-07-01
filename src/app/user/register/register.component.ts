@@ -1,6 +1,8 @@
 import { Component,OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
+import { matchPasswords } from 'src/shared/password-validator.service';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -11,7 +13,7 @@ export class RegisterComponent implements OnInit {
   constructor(private userObj :UserService ){
 
   }
-  
+  notmatched:boolean=false
 
 
   signupform !: FormGroup;
@@ -25,6 +27,7 @@ export class RegisterComponent implements OnInit {
   city : FormControl | any;
   state : FormControl | any;
   gstnumber : FormControl | any;
+  password : FormControl | any;
   
 
   onSubmission(form:any){
@@ -32,10 +35,22 @@ export class RegisterComponent implements OnInit {
     this.userObj.postUsers(form.value)
   }
 
+  matchPasswords(pass1:string,pass2:string){
+    console.log(pass1,pass2);
+    if(pass1!=pass2){
+      this.notmatched= true
+    }
+    else{
+      this.notmatched= false
+    }
+    
+    
+  }
+
   ngOnInit(): void {
     this.firstname = new FormControl('', [Validators.required]);
     this.lastname = new FormControl('', [Validators.required]);
-    this.useremail = new FormControl('', [Validators.required]);
+    this.useremail = new FormControl('', [Validators.required, Validators.email]);
     this.confirmpassword = new FormControl('', [Validators.required]);
     this.companytype = new FormControl('', [Validators.required]);
     this.dealershipname = new FormControl('', [Validators.required]);
@@ -43,6 +58,7 @@ export class RegisterComponent implements OnInit {
     this.city = new FormControl('', [Validators.required]);
     this.state = new FormControl('', [Validators.required]);
     this.gstnumber = new FormControl('', [Validators.required]);
+    this.password = new FormControl('', [Validators.required]);
     this.signupform = new FormGroup(
       {
         firstname : this.firstname,
@@ -54,7 +70,8 @@ export class RegisterComponent implements OnInit {
         dealershipcode : this.dealershipcode,
         city : this.city,
         state : this.city,
-        gstnumber : this.gstnumber
+        gstnumber : this.gstnumber,
+        password :this.password
       }
     )
   }

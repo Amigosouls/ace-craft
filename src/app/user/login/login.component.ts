@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { MessageService } from 'primeng/api';
@@ -6,58 +6,56 @@ import { Users } from 'src/model/users';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [MessageService]
+  providers: [MessageService],
 })
 export class LoginComponent implements OnInit {
-  isLogged:boolean=false;
-  loginForm !: FormGroup;
-  username : FormControl | any;
-  password : FormControl | any;
-  userList:Users[]=[]
-  constructor(private userObj: UserService, private router: Router, private messages: MessageService){
-  }
+  isLogged: boolean = false;
+  loginForm!: FormGroup;
+  username: FormControl | any;
+  password: FormControl | any;
+  userList: Users[] = [];
+  usersUrl = environment.userapi;
 
-
+  constructor(
+    private userObj: UserService,
+    private router: Router,
+    private messages: MessageService
+  ) {}
 
   ngOnInit(): void {
-    this.userObj.getUser().subscribe(
-      (response)=>{
-        this.userList=response
-      }
-    )
+
+
+    this.userObj.getUser().subscribe((response) => {
+      this.userList = response;
+    });
     this.username = new FormControl('', [Validators.required]);
     this.password = new FormControl('', [Validators.required]);
-    this.loginForm = new FormGroup(
-      {
-        username : this.username,
-        password : this.password
-      }
-    )
-
+    this.loginForm = new FormGroup({
+      username: this.username,
+      password: this.password,
+    });
   }
-  redirectPage(){
- 
-  }
-
-  onSubmission(form:any){
+  onSubmission(form: any) {
     for (const users of this.userList) {
-      if((users.useremail==form.value.username) && (users.confirmpassword==form.value.password)) {
-        this.userObj.putUsers(users,users.id);
-        this.isLogged=true;
-        alert("login Success")
-        this.router.navigate(['/home'])
+      if (
+        users.useremail == form.value.username &&
+        users.confirmpassword == form.value.password
+      ) {
+        this.userObj.putUsers(users, users.id);
+        this.isLogged = true;
+        alert('login Success');
+        this.userObj.validateAuth(true);
+        this.router.navigate(['/home']);
         break;
       }
-      if(!this.isLogged){
-        alert("No user found with this email or password");
+      if (!this.isLogged) {
+        alert('No user found with this email or password');
+        this.userObj.validateAuth(false);
       }
     }
-    
   }
-
 }

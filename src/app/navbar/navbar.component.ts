@@ -1,22 +1,23 @@
 import { Component,OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { CartService } from 'src/services/cart.service';
-
-
+import { UserService } from 'src/services/user.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private cartObj: CartService){}
+  constructor(private cartObj: CartService , private userService :UserService ){
+
+  }
 
   items: MenuItem[] |any;
   cartList :any=[]
   cartCount:number=0
-
+  userValid :any=false;
   activeItem: MenuItem | any;
 
   ngOnInit() {
@@ -42,8 +43,17 @@ export class NavbarComponent implements OnInit {
           console.log(this.cartCount)
         }
       )
-
+      this.userService.authorisationSubject.subscribe(
+        (data)=>{
+          console.log(data);
+          this.userValid=data;
+        }
+      )
+      console.log(this.userValid)
   }
+
+
+
   setId(id:string){
     this.idValue=id
   }
