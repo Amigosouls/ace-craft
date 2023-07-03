@@ -4,22 +4,17 @@
     background-image: url(src/assets/img/body-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
-    min-width: 100%;
+    background-position: center;
+    padding-top: 400px;
+    padding-bottom: 100px;
 }
-.col-12{
-    position: relative;
-}
+
 .content{
     
-    justify-content: center;
     align-items: end;
-    max-width: 30%;
+    max-width: 300px;
     border: 2px solid white;
-    margin-top: 320px;
-    margin-bottom: 80px;
-    padding-right: 60px;
-    padding-left: 60px;
+    margin-bottom: 50px;
 }
 .content p{
     color: grey;
@@ -27,12 +22,54 @@
 
 .content p{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.content p:nth-child(2){
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
     
 }
 
-.content p{
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+.main-body h5{
+    color: white;
+}
+
+.pi{
+    font-size: 27px !important;
+    color: white;
+}
+
+
+.container-fluid .col1{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/home3.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-fluid .col2{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/home4.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.forschool {
+    min-height: 80vh;
+}
+
+.forschool .content{
+
+    max-width: 300px;
+    border: 2px solid white;
+}
+
+
+.col2 {
+    min-height: 75vh;
 }
