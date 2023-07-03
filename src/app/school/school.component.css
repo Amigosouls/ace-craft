@@ -1,0 +1,85 @@
+.banner{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/School-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.banner .row{
+    height: 75vh;
+}
+.banner p{
+    margin-top: -150px;
+    color: #978f8f;
+    font-size: 35px;
+  
+}
+.banner span {
+    color: #978f8f;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+/*=====================design==================*/
+.design .row{
+    height: 90vh;
+    background-color: black;
+}
+
+.design .row p{
+    font-size: 33px;
+    color: #978f8f;
+}
+
+/*======================delivery====================*/
+.delivery{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/School-2.jpg);
+    background-position: 50% 60%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.delivery .row{
+    height: 150vh;
+}
+
+.delivery .row h4{
+    font-size: 35px;
+    color:black;
+}
+
+.delivery .row span{
+    margin-bottom: 200px;
+}
+
+.delivery .row p:nth-child(1){
+    margin-top: 400px;
+}
+
+
+.delivery .row p{
+    font-size: 35px;
+    width: 750px;
+    color:black
+}
+
+/*====================Be at ease==========================*/
+.be-at-ease{
+    background-color: #0e0c0d;
+    padding-top: 60px;
+}
+
+.be-at-ease .row h3,h4{
+    
+    color: #978f8f;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.be-at-ease .row p{
+    color: #978f8f;
+    font-size: 25px;
+    font-weight: 100;
+}

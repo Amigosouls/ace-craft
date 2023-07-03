@@ -98,7 +98,6 @@
                 formControlName="confirmpassword"
                 class="form-control"
                 placeholder="Confirm Password"
-                (keyup)="matchPasswords(password.value,confirmpassword.value)"
                 [ngClass]="{
                   'is-invalid':
                     signupform.errors &&
@@ -112,7 +111,7 @@
               <strong *ngIf="confirmpassword.errors?.required">
                confirmpassword is required</strong
               >
-              <strong *ngIf=notmatched>
+              <strong *ngIf=confirmpassword.errors.matchPasswords>
                 password don't match </strong>
             </span>
           </div>

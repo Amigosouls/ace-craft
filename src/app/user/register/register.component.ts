@@ -2,7 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from 'src/services/user.service';
 import { matchPasswords } from 'src/shared/password-validator.service';
-
+import { FormBuilder} from '@angular/forms';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -10,11 +10,16 @@ import { matchPasswords } from 'src/shared/password-validator.service';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private userObj :UserService ){
-
+  constructor(private userObj :UserService, private formBuilder: FormBuilder ){
+    this.signupform = formBuilder.group({
+      password:['',[Validators.required]],
+      confirmpassword:['',[Validators.required]]
+    },
+    {
+      validator : matchPasswords('password','confirmpassword') 
+    })
   }
   notmatched:boolean=false
-
 
   signupform !: FormGroup;
   firstname : FormControl | any;

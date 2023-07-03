@@ -46,27 +46,37 @@
 
 .container-fluid .col1{
     background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/home3.jpg);
-    background-position:top;
+    background-position:50% 20%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .container-fluid .col2{
     background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/home4.jpg);
-    background-position:top;
+    background-position:50% 20%;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
+
+
 .forschool {
-    min-height: 80vh;
+    min-height: 90vh;
+}
+.subbody{
+    background-color: black;
 }
 
 .forschool .content{
 
     max-width: 300px;
     border: 2px solid white;
+    margin-bottom: -300px;
+}
+.forschool h5{
+    padding-bottom: 50px;
+    color: white;
 }
 
 

@@ -36,6 +36,16 @@
                     <h5>Enter Coupon</h5>
                     <input type="text" name="" id=""><button class="">Apply</button>
                 </div>
+                <div class="col-4 pricing">
+                    <p>Sub Total</p>
+                    <p>Total</p>
+                </div>
+                <div class="col-4 total text-end">
+                    <p class="align-content-end">{{cartTotal(cartList) | currency :'INR'}}</p>
+                    <p class="align-content-end">{{cartTotal(cartList) | currency :'INR'}}</p>
+                    <button routerLink="/" class="btn w-50 me-5 mt-3 mb-5 btn-light shopping">Continue Shopping</button>
+                    <button routerLink="/" class="btn mt-3 mb-5 btn-light shopping">Place Order</button>
+                </div>
             </div>
     </div>
 </div>

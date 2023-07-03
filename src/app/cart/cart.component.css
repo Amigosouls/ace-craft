@@ -13,3 +13,29 @@
 .cart .container .row:last-child{
     border-bottom: none;
 }
+
+.pricing p:nth-child(1){
+    font-size: 21px;
+    font-weight: 600;
+    color: grey;
+}
+.total p:nth-child(1){
+    font-size: 21px;
+    font-weight: 600;
+    color: grey;
+}
+
+.pricing p:nth-child(2){
+    font-size: 27px;
+    font-weight: 600;
+    
+}
+
+.total p:nth-child(2){
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.total button{
+    width: 150px;
+}
