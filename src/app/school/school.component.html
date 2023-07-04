@@ -1,63 +1,93 @@
 <!--====================School==========================-->
 
 <div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-md-2 col-lg-1 col-sm-3 col-xl-1 text-center" *ngFor="let school of schoolList">
-            <a routerLink="{{['/browse/'+school.id]}}"><img src="{{school.school_img}}"  height="50px" alt="" srcset=""></a>
-            <p>{{school.school_name |uppercase | spacePipe}}</p>
-        </div>
+  <div class="row justify-content-center">
+    <div
+      class="col-md-2 col-lg-1 col-sm-3 col-xl-1 text-center"
+      *ngFor="let school of schoolList"
+    >
+      <a routerLink="{{ ['/browse/' + school.id] }}"
+        ><img src="{{ school.school_img }}" height="50px" alt="" srcset=""
+      /></a>
+      <p>{{ school.school_name | uppercase | spacePipe }}</p>
     </div>
+  </div>
 </div>
 
 <div class="container-fluid banner">
-    <div class="row justify-content-center align-content-end">
-        <p class="col-xl-5 flex justify-content-center">
-            Designer uniforms <strong>&nbsp; for the doers.</strong>
-        </p>
-        <span class='fadeoutdown animation-duration-1000 animation-iteration-infinite flex justify-content-center pi pi-chevron-down'></span>"
-    </div>
+  <div class="row justify-content-center align-content-end">
+    <p class="col-xl-5 flex justify-content-center">
+      Designer uniforms <strong>&nbsp; for the doers.</strong>
+    </p>
+    <span
+      class="fadeoutdown animation-duration-1000 animation-iteration-infinite flex justify-content-center pi pi-chevron-down"
+    ></span
+    >"
+  </div>
 </div>
 
 <!--=======================Advanced Design =====================-->
 
 <div class="container-fluid design">
-    <div class="row justify-content-center align-content-center ">
-        <p class=" text-center">Aesthetically advanced,</p>
-        <p class=" text-center">our designer uniforms are <strong>
-            a cut above the rest,</strong></p>
-        <strong><p class=" text-center">in every sense of the word.</p></strong>
-        
-    </div>
+  <div class="row justify-content-center align-content-center">
+    <p class="text-center">Aesthetically advanced,</p>
+    <p class="text-center">
+      our designer uniforms are <strong> a cut above the rest,</strong>
+    </p>
+    <strong><p class="text-center">in every sense of the word.</p></strong>
+  </div>
 </div>
 
 <div class="container-fluid delivery">
-    <div class="row justify-content-center align-content-center">
-        <p class="text-center" >Perfection. Now delivering to your doorstep.</p>
-        <span class='fadeoutdown animation-duration-1000 animation-iteration-infinite flex justify-content-center pi pi-chevron-down'></span>"
+  <div class="row justify-content-center align-content-center">
+    <p class="text-center">Perfection. Now delivering to your doorstep.</p>
+    <span
+      class="fadeoutdown animation-duration-1000 animation-iteration-infinite flex justify-content-center pi pi-chevron-down"
+    ></span
+    >"
 
-        <h4 class="text-center">Less <strong> hassle.</strong> More <strong>hustle.</strong></h4>
-          <p class="text-center">  Our end-to-end e-commerce facility with
-            <strong>superior technology enables us to
-                deliver your order right to your doorstep.</strong></p>
-    </div>
+    <h4 class="text-center">
+      Less <strong> hassle.</strong> More <strong>hustle.</strong>
+    </h4>
+    <p class="text-center">
+      Our end-to-end e-commerce facility with
+      <strong
+        >superior technology enables us to deliver your order right to your
+        doorstep.</strong
+      >
+    </p>
+  </div>
 </div>
 
 <!--===================Be at ease=====================-->
 
 <div class="container-fluid be-at-ease">
-    <div class="container">
-        <div class="row justify-content-end">
-            <h4 class="text-end">Be at ease.</h4>
-            <h3 class="text-end">Everyday</h3>
-            <p class="w-50 text-end">
-                Our uniforms keep your children looking great
-from the first day of school until the end-of-the-year picnic.
-            </p>
-        </div>
-        <div class="row g-0 w-100 banner">
-            <img src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/BK,.jpg" class="img-fluid" alt="uniform banner" >
-        </div>
+  <div class="container">
+    <div class="row justify-content-end">
+      <h4 class="text-end">Be at ease.</h4>
+      <h3 class="text-end">Everyday</h3>
+      <p class="w-50 text-end">
+        Our uniforms keep your children looking great from the first day of
+        school until the end-of-the-year picnic.
+      </p>
     </div>
+    <div class="row g-0 w-100 banner">
+      <img
+        src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/BK,.jpg"
+        class="img-fluid"
+        alt="uniform banner"
+      />
+    </div>
+  </div>
 </div>
 
 <!--=======================Get in touch==================-->
+<div class="container-fluid get-in-touch">
+  <div class="container">
+    <div class="row align-items-center">
+        <div class="col-12 justify-content-center align-items-center flex">
+            <app-get-in-touch></app-get-in-touch>
+        </div>
+    </div>
+  </div>
+</div>

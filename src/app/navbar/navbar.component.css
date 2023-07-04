@@ -36,8 +36,9 @@ ul {
 .badge {
     margin-left: 20px;
     letter-spacing: 0px;
-    padding: 1px;
-    background-color: cadetblue !important;
+    border-radius: 30px !important;
+    padding: 3px;
+    background-color: rgb(171, 198, 199) !important;
 }
 
 .dropdown-content a:hover {

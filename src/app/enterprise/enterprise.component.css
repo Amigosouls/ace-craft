@@ -26,3 +26,47 @@
     font-size: 25px;
 }
 
+/*======================Timeline===========================*/
+
+.custom-marker{
+    padding: 3px;
+    font-size: 18px;
+}
+
+.p-timeline-event{
+    padding-left: 30px !important;
+}
+
+.timeline{
+    overflow-x: hidden !important;
+    background-color: black;
+    border: none !important; 
+}
+
+.card{
+    border: none;
+    background-color: black;
+}
+
+.timeline .row:nth-child(1){
+    height: 15vh;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #978f8f;
+}
+
+.timeline .row:nth-child(2){
+    width: 100%;
+    --bs-gutter-x: none;
+    height: 50vh;
+    background-color: black;
+}
+
+/*===================body2 ========================*/
+.body2 .row:nth-child(2){
+    height: 70vh;
+}
+
+.body2 .card p{
+    padding-top: 30px;
+}

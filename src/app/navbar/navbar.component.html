@@ -21,7 +21,7 @@
              <a routerLink='user/register'  *ngIf="userValid==false">Register | <span class="pi pi-user-plus"></span></a>
              <a href="">Order Status | <span class="pi pi-briefcase"></span></a>
              <a href="">Contact | <span class="pi pi-telegram"></span></a>
-             <a routerLink='/home' (click)="userValid=false" *ngIf="userValid==true">Logout | <span class="pi pi-user-plus"></span></a>
+             <a routerLink='/home' (click)="logout()" *ngIf="userValid==true">Logout | <span class="pi pi-user-plus"></span></a>
             </div>
         </span>
           <a routerLink="cart"><span class="pi pi-shopping-cart "> <span  *ngIf="userValid==true" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">{{cartCount}}</span></span></a>

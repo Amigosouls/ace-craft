@@ -13,6 +13,7 @@ import { UserComponent } from './user/user.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { CartComponent } from './cart/cart.component';
+import { loginAuthGuard } from 'src/shared/login-auth.guard';
 const routes: Routes = [
   {path:'college', component:CollegeComponent},
   {path:'', component:HomeComponent},

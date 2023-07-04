@@ -357,5 +357,76 @@
       "id": 3
     }
   ],
-  "Cart": []
+  "Cart": [
+    {
+      "prod_id": "NHIS-Day-Wear-Polo-Boys-Girls-Nursery-Grade-5",
+      "name": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
+      "category": "school",
+      "prod_img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg",
+      "product_code": "",
+      "brand": "ACECRAFT",
+      "sold_by": "Alchemy",
+      "price": 450,
+      "sell_price": 340,
+      "discount": 24,
+      "description": [
+        ""
+      ],
+      "userid": 3,
+      "quantity": 1,
+      "size": "28",
+      "id": 1
+    }
+  ],
+  "Events": [
+    {
+      "status": "Single line brief",
+      "icon": 1,
+      "color": "black",
+      "image": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-1.png"
+    },
+    {
+      "status": "Mind Mapping",
+      "icon": 2,
+      "image": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-2.png"
+    },
+    {
+      "status": "Design and Details",
+      "icon": 3,
+      "image": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-3.png"
+    },
+    {
+      "status": "Sampling",
+      "icon": 4,
+      "image": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-4.png"
+    },
+    {
+      "status": "Manufacturing",
+      "icon": 5,
+      "image": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-5.png"
+    },
+    {
+      "status": "Delivery",
+      "icon": 6,
+      "image": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-6.png"
+    }
+  ],
+  "Cards": [
+    {
+      "id": 1,
+      "title": "F(IT) MATTERS",
+      "description": "A size for every one.",
+      "img": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-2.png"
+    },
+    {
+      "id": 2,
+      "title": "PERSONALISED BRANDING",
+      "description": "Your design. Our customization."
+    },
+    {
+      "id": 3,
+      "title": "TEAM UP FOR TEAM WEAR",
+      "description": "Bulk orders delivered seamlessly"
+    }
+  ]
 }

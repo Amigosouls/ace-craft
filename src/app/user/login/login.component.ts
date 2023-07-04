@@ -45,11 +45,11 @@ export class LoginComponent implements OnInit {
         users.useremail == form.value.username &&
         users.confirmpassword == form.value.password
       ) {
-        this.userObj.putUsers(users, users.id);
+        this.userObj.putUsers(users, users.id,'login');
         this.isLogged = true;
-        alert('login Success');
+        this.messages.add({ severity: 'success', summary: 'Success', detail: 'Login Success' });
         this.userObj.validateAuth(true);
-        this.router.navigate(['/home']);
+        setTimeout( ()=>{this.router.navigate(['/home'])},2000)
         break;
       }
       if (!this.isLogged) {

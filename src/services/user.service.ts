@@ -28,13 +28,23 @@ export class UserService {
     return this.httpObj.get<Users[]>(this.usersUrl+'?logged_like=true')
    }
 
-   putUsers(userList:Users,id:number){
+   putUsers(userList:Users,id:number,action:string){
+   if(action=='login'){
     userList.logged=true;
     this.httpObj.put<Users>(this.usersUrl+'/'+id,userList).subscribe(
       (response)=>{
         console.log(response);
       }
     )
+   }
+   else if(action=='logout'){
+    userList.logged=false;
+    this.httpObj.put<Users>(this.usersUrl+'/'+id,userList).subscribe(
+      (response)=>{
+        console.log(response);
+      }
+    )
+   }
    }
 
    getUser(){

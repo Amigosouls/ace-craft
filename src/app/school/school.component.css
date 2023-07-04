@@ -83,3 +83,16 @@
     font-size: 25px;
     font-weight: 100;
 }
+
+/*=======================Get in Touch ==========================*/
+
+.get-in-touch{
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/School-41.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.get-in-touch .row{
+    height: 60vh;
+}

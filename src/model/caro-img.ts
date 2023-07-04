@@ -34,3 +34,9 @@ interface Content_2{
     p4:string;
     p5:string;
 }
+
+export interface EventItem{
+    status:string;
+    icon:string;
+    image:string;
+}
