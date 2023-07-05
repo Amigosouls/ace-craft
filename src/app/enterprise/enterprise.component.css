@@ -34,10 +34,11 @@
 }
 
 .p-timeline-event{
-    padding-left: 30px !important;
+    
+    width: 100px !important;
 }
 
-.timeline{
+.timeline1{
     overflow-x: hidden !important;
     background-color: black;
     border: none !important; 
@@ -48,14 +49,14 @@
     background-color: black;
 }
 
-.timeline .row:nth-child(1){
+.timeline1 .row:nth-child(1){
     height: 15vh;
     font-size: 35px;
     font-weight: bolder;
     color: #978f8f;
 }
 
-.timeline .row:nth-child(2){
+.timeline1 .row:nth-child(2){
     width: 100%;
     --bs-gutter-x: none;
     height: 50vh;
@@ -64,9 +65,16 @@
 
 /*===================body2 ========================*/
 .body2 .row:nth-child(2){
-    height: 70vh;
+    min-height: 70vh;
 }
 
-.body2 .card p{
+.body2 .card p,h3{
     padding-top: 30px;
+    color: #978f8f;
+}
+
+@media screen and (max-width:900px) {
+    .timeline1{
+        display: none;
+    }
 }

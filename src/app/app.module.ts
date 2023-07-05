@@ -25,6 +25,7 @@ import { EnterpriseComponent } from './enterprise/enterprise.component';
 import { ViewNotesComponent } from './notes/view-notes/view-notes.component';
 import { SchoolComponent } from './school/school.component';
 import { BrowseComponent } from './browse/browse.component';
+import { ProductComponent } from './product/product.component';
 //primeng components
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MenubarModule } from 'primeng/menubar';
@@ -35,7 +36,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { CardModule } from 'primeng/card';
-import { ProductComponent } from './product/product.component';
+import { BadgeModule } from 'primeng/badge';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { TimelineModule } from 'primeng/timeline';
 
@@ -81,7 +82,8 @@ import { MessageService } from 'primeng/api';
     ReactiveFormsModule,
     ToastModule,
     FormsModule,
-    TimelineModule
+    TimelineModule,
+    BadgeModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

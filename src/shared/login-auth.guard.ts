@@ -18,7 +18,7 @@ export class loginAuthGuard implements CanActivate{
     }
   )
   if(this.isAuthenticated==false){
-    this.routerObj.navigate(['[/user/,"login"]'])
+    this.routerObj.navigate(["/login"])
     return false;
   }
   else{

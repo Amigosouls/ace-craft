@@ -25,10 +25,9 @@ const routes: Routes = [
   {path:'school',component:SchoolComponent},
   {path:'browse/:id',component:BrowseComponent},
   {path:'product/:id', component:ProductComponent},
-  {path:'user/:id',component:UserComponent, children:[
+  {path:'user/:id',component:UserComponent},
     {path:'login', component:LoginComponent},
-    {path:'register',component:RegisterComponent}
-  ]},
+    {path:'register',component:RegisterComponent},
   {path:'cart',component:CartComponent}
 
 ];

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EventItem } from 'src/model/caro-img';
 import { ImgserviceService } from 'src/services/imgservice.service';
 
+
 @Component({
   selector: 'app-enterprise',
   templateUrl: './enterprise.component.html',
@@ -9,6 +10,7 @@ import { ImgserviceService } from 'src/services/imgservice.service';
 })
 export class EnterpriseComponent implements OnInit {
   events:any=[];
+  cards:any=[]
   constructor(private imgServices:ImgserviceService){
 
 
@@ -19,6 +21,13 @@ export class EnterpriseComponent implements OnInit {
         this.events=response;
       }
     )
+    this.imgServices.getCards().subscribe(
+      (response)=>{
+        this.cards=response;
+      }
+    )
+
+
   }
 
   

@@ -143,3 +143,7 @@ a{
     max-width: 100%;
 }
 
+.dropdown-content p-badge{
+    color:darkgrey !important;
+    font-size: 20px  !important;
+}

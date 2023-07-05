@@ -16,19 +16,19 @@ export class NavbarComponent implements OnInit {
     private routerObj: Router,
     private messages:MessageService
   ) {
-    // this.userService.getActiveUser().subscribe(
-    //   (response)=>{
-    //     this.userValid = response[0].logged
-    //     this.activeUser=response
-    //   }
-    // )
+    this.userService.getActiveUser().subscribe(
+      (response)=>{
+        this.userValid = response[0].logged
+        this.activeUser=response
+      }
+    )
   }
 
   items: MenuItem[] | any;
   cartList: any = [];
   activeUser: any = [];
   cartCount: number = 0;
-  userValid: any = true;
+  userValid: any = false;
   activeItem: MenuItem | any;
   idValue = '';
   ngOnInit() {
@@ -59,14 +59,15 @@ export class NavbarComponent implements OnInit {
 
   logout() {
     this.userValid = false;
+    console.log(this.activeUser)
     this.userService.putUsers(
       this.activeUser[0],
       this.activeUser[0].id,
       'logout'
     );
-    this.messages.add({ severity: 'success', summary: 'Success', detail: 'Login Success' });
+    this.messages.add({ severity: 'danger', summary: 'Success', detail: 'Your Session Expired' });
     this.userService.validateAuth(true);
-    setTimeout( ()=>{this.routerObj.navigate(['users/'])},2000)
+    setTimeout( ()=>{this.routerObj.navigate(['/login'])},2000)
   }
   setId(id: string) {
     this.idValue = id;

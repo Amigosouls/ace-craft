@@ -40,3 +40,10 @@ export interface EventItem{
     icon:string;
     image:string;
 }
+
+export interface Cards{
+    id:number,
+    title:string,
+    description:string,
+    img:string
+}

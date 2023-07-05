@@ -72,15 +72,12 @@
     #making-banner{
         padding:0px;
     }
-    #making-banner .col-sm-3{
-        
-    }
 }
-
 /*==================================Trials============================*/
 
 .trials{
     background-color: black;
+    color:#b2b3b5;
 }
 
 .trials .row{
