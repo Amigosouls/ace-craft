@@ -1,3 +1,4 @@
+<p-toast></p-toast>
 <div class="container-fluid cart">
     <div class="container" *ngIf="cartCount<1">
         <div class="row flex justify-content-center">
@@ -44,7 +45,7 @@
                     <p class="align-content-end">{{cartTotal(cartList) | currency :'INR'}}</p>
                     <p class="align-content-end">{{cartTotal(cartList) | currency :'INR'}}</p>
                     <button routerLink="/" class="btn w-50 me-5 mt-3 mb-5 btn-light shopping">Continue Shopping</button>
-                    <button routerLink="/" class="btn mt-3 mb-5 btn-light shopping">Place Order</button>
+                    <button class="btn mt-3 mb-5 btn-light shopping"  (click)="makePayment(cartTotal(cartList))" >Place Order</button>
                 </div>
             </div>
     </div>

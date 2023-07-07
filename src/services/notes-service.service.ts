@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NotesViewer } from 'src/model/caro-img';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class NotesService {
-  notesUrl ="http://localhost:3000/Notes"
+  notesUrl =environment.notesapi
   constructor(private httpObj:HttpClient) { }
 
   getNotes(){

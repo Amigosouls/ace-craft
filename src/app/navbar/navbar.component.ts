@@ -15,13 +15,14 @@ export class NavbarComponent implements OnInit {
     private userService: UserService,
     private routerObj: Router,
     private messages:MessageService
-  ) {
-    this.userService.getActiveUser().subscribe(
-      (response)=>{
-        this.userValid = response[0].logged
-        this.activeUser=response
-      }
-    )
+  ) 
+  {
+    // this.userService.getActiveUser().subscribe(
+    //   (response)=>{
+    //     this.userValid = response[0].logged
+    //     this.activeUser=response
+    //   }
+    // )
   }
 
   items: MenuItem[] | any;

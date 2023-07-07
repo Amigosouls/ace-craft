@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { CaroImg } from '../model/caro-img';
 import { EventItem } from '../model/caro-img';
 import { Cards } from '../model/caro-img';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,9 +11,9 @@ export class ImgserviceService {
 
   constructor(private httpClient : HttpClient) { }
 
-  urlString : string = 'http://localhost:3000/Trials'
-  timelineString :string = 'http://localhost:3000/Events'
-  cardUrl : string="http://localhost:3000/Cards"
+  urlString =environment.trialsapi
+  timelineString=environment.eventsapi
+  cardUrl =environment.cardsapi
   getCarouselImages(){
     return this.httpClient.get<CaroImg[]>(this.urlString)
   }

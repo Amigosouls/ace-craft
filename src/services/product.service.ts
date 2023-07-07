@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProductModel } from 'src/model/product-model';
 import { retry } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  productUrl = "http://localhost:3000/Products"
+  productUrl =environment.productsapi
   constructor(private httpObj : HttpClient) { }
 
   getProductsByCategory(category : string){
