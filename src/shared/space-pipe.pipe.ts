@@ -1,3 +1,5 @@
+//used to remove - and insert spaces
+
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
