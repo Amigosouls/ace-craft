@@ -15,6 +15,8 @@ export class BrowseComponent implements OnInit {
   sortOrder: any;
   sortingOption: any;
   
+  //function sets parameter for the sort pipe
+
   getSortedList(event:any){
     this.sortingOption = event.target.value;
     if(this.sortingOption==='lth'){

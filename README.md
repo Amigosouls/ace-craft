@@ -1,27 +1,37 @@
-# AceCraft
+# ACECRAFT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+Acecraft is a webapplication that promotes the bussiness of company acecraft, which 
+designs uniforms. This minimal angular application performs the functionalities of a basic e-commerce website.
+The application is based on Angular 16, and is a single page application. App features,
+registration, authentication, cart maintainance, ordering, etc.
 
-## Development server
+For full view of the project visit => https://github.com/Amigosouls/ace-craft
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Requirements
 
-## Running unit tests
+--Angular v14.0 or above
+--TypeScript v4.8 - 4.9.5
+--Node v14 and above
+--npm v10.0 and above
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Recommended Modules
+--PrimeNg v16.0.2
+--Bootstrap v5.0.2
+--PrimeIcons v5.0
+--PrimeFlex v3.3
 
-## Running end-to-end tests
+### Configuration
+-- open terminal and direct to the folder acecraft.
+-- use command >ng s -o or ng serve -o for running the application.
+-- Please make sure you're connected to internet to load the database and external stylesheets.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Troubleshooting
+-- if the application fails to compile or render the page, try to degrade your angular version.
+-- if the page renders very slow, try cleaning the browser caches.
+-- try browsers Chrome v114, or Firefox v110.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

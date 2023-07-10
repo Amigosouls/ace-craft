@@ -1,3 +1,5 @@
+//service for rendering blog page.
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NotesViewer } from 'src/model/caro-img';
@@ -12,6 +14,8 @@ export class NotesService {
   getNotes(){
     return this.httpObj.get<NotesViewer[]>(this.notesUrl);
   }
+
+  //retrives note by id
   getNotesById(id:string){
     return this.httpObj.get<NotesViewer[]>(this.notesUrl+'?id='+id);
   }

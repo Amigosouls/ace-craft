@@ -10,7 +10,7 @@
   </div>
   <div class="row">
     <div>
-      <p-menubar [model]="items"> </p-menubar>
+      <p-menubar [model]="items" *ngIf="userValid == true"> </p-menubar>
     </div>
     <span class=" login-signup ms-auto flex">
       <ul class="flex">

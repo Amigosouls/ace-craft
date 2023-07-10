@@ -65,7 +65,7 @@ import { MessageService } from 'primeng/api';
     LoginComponent,
     RegisterComponent,
     CartComponent,
-    SortProductPipe
+    SortProductPipe,
   ],
   imports: [
     BrowserModule,

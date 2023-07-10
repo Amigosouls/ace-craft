@@ -1,3 +1,5 @@
+// service is used to load images and carousels
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CaroImg } from '../model/caro-img';
@@ -17,7 +19,7 @@ export class ImgserviceService {
   getCarouselImages(){
     return this.httpClient.get<CaroImg[]>(this.urlString)
   }
-
+  
   getTimeline(){
     return this.httpClient.get<EventItem>(this.timelineString)
   }

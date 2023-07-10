@@ -14,6 +14,7 @@ export class CartService {
 
   constructor(private httpObj : HttpClient, private userObj: UserService) { }
 
+  //function to post to cartitems(new)
   postToCart(product:ProductModel){
     this.httpObj.post<ProductModel>(this.cartUrl, product).subscribe(
       (response)=>{
@@ -23,6 +24,8 @@ export class CartService {
     )
   }
 
+  //remove product from cart
+
   deleteFromCart(id:number){
     this.httpObj.delete(this.cartUrl+'/'+id).subscribe(
       (response)=>{
@@ -30,6 +33,8 @@ export class CartService {
       }
     )
   }
+
+  //increase or decrease quantity of product
 
   increaseCartQuantity(id:number, product:ProductModel){
     this.httpObj.put<ProductModel>(this.cartUrl+'/'+id,product).subscribe(
@@ -43,8 +48,10 @@ export class CartService {
     
   }
 
+  //countsubject allows to track change the count of cart items.
   public countSubject = new Subject<number>();
 
+  //fuction returns and sets the count of cartItems
   getCount(){
     return this.getCartItems().subscribe(
       (res) => {
