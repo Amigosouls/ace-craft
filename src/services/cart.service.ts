@@ -20,7 +20,6 @@ export class CartService {
       (response)=>{
         console.log(response)
       }
-
     )
   }
 

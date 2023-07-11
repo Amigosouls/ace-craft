@@ -59,38 +59,3 @@
   </div>
 </div>
 
-<!--===================How we do it====================== -->
-<div class="container-fluid timeline1">
-  <div class="row justify-content-center align-content-end">
-    This is how we do it
-  </div>
-  <div class="row justify-content-center">
-      <div class="card col-12">
-        <p-timeline
-          [value]="events"
-          align="top"
-          layout="horizontal"
-          styleClass="customized-timeline"
-          [style.backgroundColor]="events[0].color"
-        >
-          <ng-template pTemplate="marker" let-event>
-            <span class="custom-marker shadow-2">
-              {{ event.icon }}
-            </span>
-          </ng-template>
-          <ng-template pTemplate="content" let-event>
-            <p-card class="50" [style.backgroundColor]="event.color">
-              <img
-                *ngIf="event.image"
-                [src]="event.image"
-                [alt]="event.name"
-                width="200"
-                class="shadow-2"
-              />
-              <h6>{{ event.status }}</h6>
-            </p-card>
-          </ng-template>
-        </p-timeline>
-      </div>
-    </div>
-</div>
