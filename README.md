@@ -11,9 +11,7 @@ For full view of the project visit => https://github.com/Amigosouls/ace-craft
 --Getting started: You can start by signing in by hovering the settings or getting yourself a 
 new account and sign in inorder to access the navigation bar. after logging in you can navigate
 through components using navbar. Each componens contains router enabled elements through which
-you can perform the 
-
-
+you can perform functions.
 
 ### Requirements
 

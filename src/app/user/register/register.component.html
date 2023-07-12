@@ -86,6 +86,9 @@
             </div>
             <span class="feedback" *ngIf="password.invalid && password.touched ">
               <!--*ngIf Directive-->
+              <strong *ngIf="password.errors?.pattern">
+                pattern doesn't match</strong
+               >
               <strong *ngIf="password.errors?.required">
                Password is required</strong
               >
@@ -111,6 +114,7 @@
               <strong *ngIf="confirmpassword.errors?.required">
                confirmpassword is required</strong
               >
+            
               <strong *ngIf=confirmpassword.errors.matchPasswords>
                 password don't match </strong>
             </span>
@@ -290,6 +294,7 @@
           </div>
           <button class="form-control mt-5 btn" type="submit">Sign Up</button>
         </form>
+        <p class="flex justify-content-center pt-5"> Have an account? <a class="bg-white" style="color: black !important;" routerLink="/login">Sign in</a></p>
       </div>
     </div>
   </div>
