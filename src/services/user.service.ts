@@ -10,18 +10,12 @@ export class UserService {
   userId =0
 
   usersUrl =environment.userapi;
-  constructor(private httpObj:HttpClient) {
-    
-
-   }
+  constructor(private httpObj:HttpClient) {}
 
    postUsers(userList : Users){
     userList.logged=false;
     this.httpObj.post<Users>(this.usersUrl,userList).subscribe(
-      (response)=>{
-        console.log(response);
-        
-      }
+      (response)=>{}
     )
    }
 
@@ -33,17 +27,13 @@ export class UserService {
    if(action=='login'){
     userList.logged=true;
     this.httpObj.put<Users>(this.usersUrl+'/'+id,userList).subscribe(
-      (response)=>{
-        console.log(response);
-      }
+      (response)=>{}
     )
    }
    else if(action=='logout'){
     userList.logged=false;
     this.httpObj.put<Users>(this.usersUrl+'/'+id,userList).subscribe(
-      (response)=>{
-        console.log(response);
-      }
+      (response)=>{}
     )
    }
    }
@@ -52,13 +42,11 @@ export class UserService {
    return this.httpObj.get<Users[]>(this.usersUrl)
    }
 
-
    public authorisationSubject = new Subject<boolean>();
 
    validateAuth(data:boolean){
     this.authorisationSubject.next(data);
    }
-
 
    value?:boolean;
 

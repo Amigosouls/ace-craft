@@ -1,8 +1,6 @@
 <!-- ========== Navbar============== -->
-
-<div
-  class="navbar border-noround card sticky-top align-items-center justify-content-center"
->
+<p-toast></p-toast>
+<div class="navbar border-noround card sticky-top align-items-center justify-content-center">
   <div class="row flex-block">
     <div class="col-12">
       <a routerLink="home"><h2>acecraft</h2></a>
@@ -12,7 +10,7 @@
     <div>
       <p-menubar [model]="items" *ngIf="userValid == true"> </p-menubar>
     </div>
-    <span class=" login-signup ms-auto flex">
+    <span class=" login-signup ms-auto flex pt-5">
       <ul class="flex">
         <span class="pi pi-cog dropdown">
           <div class="dropdown-content">

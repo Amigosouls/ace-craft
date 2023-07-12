@@ -27,7 +27,6 @@
               
             ],
             "scripts": [
-              "node_modules/fontawesome/index.js"
             ]
           },
           "configurations": {

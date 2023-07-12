@@ -15,16 +15,7 @@ export class NavbarComponent implements OnInit {
     private userService: UserService,
     private routerObj: Router,
     private messages:MessageService
-  ) 
-  {
-    // this.userService.getActiveUser().subscribe(
-    //   (response)=>{
-    //     this.userValid = response[0].logged
-    //     this.activeUser=response
-    //   }
-    // )
-  }
-
+  ) {}
   items: MenuItem[] | any;
   cartList: any = [];
   activeUser: any = [];
@@ -40,7 +31,15 @@ export class NavbarComponent implements OnInit {
       { label: 'NOTES', id: 'edit', routerLink: 'notes' },
       { label: 'AIREN MASK', routerLink: 'airen-mask' },
     ];
-
+    this.userService.authorisationSubject.subscribe((data) => {
+      this.userValid = data;
+    });
+    this.userService.getActiveUser().subscribe(
+      (response)=>{
+        this.userValid = response[0].logged
+        this.activeUser=response
+      }
+    )
     this.activeItem = this.items[0];
     this.cartObj.countSubject.subscribe((response) => {
       console.log(response);
@@ -51,23 +50,18 @@ export class NavbarComponent implements OnInit {
       this.cartCount = this.cartList.length;
       console.log(this.cartCount);
     });
-    this.userService.authorisationSubject.subscribe((data) => {
-      console.log(data);
-      this.userValid = data;
-    });
-    console.log(this.userValid);
   }
 
   logout() {
     this.userValid = false;
+    this.userService.validateAuth(false);
     console.log(this.activeUser)
     this.userService.putUsers(
       this.activeUser[0],
       this.activeUser[0].id,
       'logout'
     );
-    this.messages.add({ severity: 'danger', summary: 'Success', detail: 'Your Session Expired' });
-    this.userService.validateAuth(true);
+    this.messages.add({ severity: 'warn', summary: 'Success', detail: 'Your Session Expired' });
     setTimeout( ()=>{this.routerObj.navigate(['/login'])},2000)
   }
   setId(id: string) {

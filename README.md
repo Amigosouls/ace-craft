@@ -8,14 +8,17 @@ registration, authentication, cart maintainance, ordering, etc.
 For full view of the project visit => https://github.com/Amigosouls/ace-craft
 
 ## Table of Contents
-
+--Getting started: You can start by signing in by hovering the settings or getting yourself a 
+new account and sign in inorder to access the navigation bar. after logging in you can navigate
+through components using navbar. Each componens contains router enabled elements through which
+you can perform the 
 
 
 
 ### Requirements
 
 --Angular v14.0 or above
---TypeScript v4.8 - 4.9.5
+--TypeScript v4.8 - 5.0
 --Node v14 and above
 --npm v10.0 and above
 
