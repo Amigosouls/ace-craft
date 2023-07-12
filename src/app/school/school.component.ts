@@ -1,6 +1,8 @@
 import { Component,OnInit } from '@angular/core';
 import { SchoolService } from 'src/services/school.service';
 
+@simpleDecorator
+
 @Component({
   selector: 'app-school',
   templateUrl: './school.component.html',
@@ -9,11 +11,9 @@ import { SchoolService } from 'src/services/school.service';
 export class SchoolComponent implements OnInit {
 
   constructor(private schoolObj:SchoolService){
-
   }
-  num=0
-  
-  schoolList :any=[]
+ 
+  schoolList :any=[];
   ngOnInit(): void {
     this.schoolObj.getSchools().subscribe(
       (response)=>{
@@ -26,4 +26,10 @@ export class SchoolComponent implements OnInit {
    
   }
 
+}
+function simpleDecorator(args:any) {
+    console.log("hello from decorator");
+    Object.defineProperty(args.prototype,'value1',{
+      value:100
+    })
 }

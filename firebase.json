@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist\\ace-craft",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
