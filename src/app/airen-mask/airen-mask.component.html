@@ -1,7 +1,10 @@
 <div class="container-fluid">
    <div class="container">
-    <h1>Error (404)</h1>
-    <h3>Page you are requesting does not exist.</h3>
-    <a routerLink="/home">Go to Home</a>
+      <div *ngIf="error">
+         {{error}}
+      </div>
+      <div>
+         {{cards[0]}}
+      </div>
    </div>
 </div>

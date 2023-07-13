@@ -14,11 +14,12 @@ import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { CartComponent } from './cart/cart.component';
 import { loginAuthGuard } from 'src/shared/login-auth.guard';
+import { airenMaskResolver } from 'src/services/airen-mask.resolver';
 const routes: Routes = [
   {path:'college', component:CollegeComponent},
   {path:'', component:HomeComponent},
   {path:'notes', component:NotesComponent},
-  {path:'airen-mask', component:AirenMaskComponent},
+  {path:'airen-mask', component:AirenMaskComponent, resolve:{data:airenMaskResolver}},
   {path:'enterprise', component:EnterpriseComponent},
   {path:'home', component:HomeComponent},
   {path:'notes/:id', component:ViewNotesComponent},
@@ -34,6 +35,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers:[]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+}
